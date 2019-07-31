@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>caculator</title> 
+
+<script type="text/javascript">
+var A;
+var B;
+var R;
+var M;
+
+function myFunction0()
+{
+	x=document.getElementById("display");  // 找到元素
+	x.value+="0";    // 改变内容
+}
+function myFunction1()
+{
+	x=document.getElementById("display");  // 找到元素
+	x.value+="1";    // 改变内容
+}
+function myFunction2()
+{
+	x=document.getElementById("display");  // 找到元素
+	x.value+="2";    // 改变内容
+}
+function myFunction3()
+{
+	x=document.getElementById("display");  // 找到元素
+	x.value+="3";    // 改变内容
+}
+function myFunction4()
+{
+	x=document.getElementById("display");  // 找到元素
+	x.value+="4";    // 改变内容
+}
+function myFunction5()
+{
+	x=document.getElementById("display");  // 找到元素
+	x.value+="5";    // 改变内容
+}
+function myFunction6()
+{
+	x=document.getElementById("display");  // 找到元素
+	x.value+="6";    // 改变内容
+}
+function myFunction7()
+{
+	x=document.getElementById("display");  // 找到元素
+	x.value+="7";    // 改变内容
+}
+function myFunction8()
+{
+	x=document.getElementById("display");  // 找到元素
+	x.value+="8";    // 改变内容
+}
+function myFunction9()
+{
+	x=document.getElementById("display");  // 找到元素
+	x.value+="9";    // 改变内容
+}
+function myFunctionD()
+{
+	x=document.getElementById("display");  // 找到元素
+	x.value+=".";    // 改变内容
+}
+function myFunctionPlu()
+{
+	m=document.getElementById("displayM");  // 找到元素
+	m.value="+";    // 改变内容
+	M=1;
+	x=document.getElementById("display");   // 找到元素
+	A=x.value;
+	x.value="";    // 改变内容
+	
+}
+function myFunctionSub()
+{
+	m=document.getElementById("displayM");  // 找到元素
+	m.value="-";    // 改变内容
+	M=2;
+	x=document.getElementById("display");   // 找到元素
+	A=x.value;
+	x.value="";     // 改变内容
+	
+}
+function myFunctionMul()
+{
+	m=document.getElementById("displayM");  // 找到元素
+	m.value="x";    // 改变内容
+	M=3;
+	x=document.getElementById("display");   // 找到元素
+	A=x.value;
+	x.value="";
+}
+function myFunctionDvi()
+{
+	m=document.getElementById("displayM");  // 找到元素
+	m.value="/";    // 改变内容
+	M=4;
+	x=document.getElementById("display");   // 找到元素
+	A=x.value;
+	x.value="";
+}
+function myFunctionEqu()
+{
+	m=document.getElementById("displayM");   // 找到元素
+	m.value="=";
+	x=document.getElementById("display");    // 改变内容
+	B=x.value;
+	switch(M)
+	{
+		case 1:
+		R=Number(A)+Number(B);
+		x.value=R;
+		break;
+		case 2:
+		R=Number(A)-Number(B);
+		x.value=R;
+		break;
+		case 3:
+		R=Number(A)*Number(B);
+		x.value=R;
+		break;
+		case 4:
+		R=Number(A)/Number(B);
+		x.value=R;
+		break;
+	}
+}
+</script>
+
+</head>
+
+<body>
+<p>
+<input name="display" type="text" class="textbox" id="display" value="">
+</p>
+
+<p>
+<input name="displayM" type="text" class="textbox1" id="displayM">
+</p>
+
+<p>
+<input name="No.AC" type="button" class="btn"  value="AC">
+<input name="No.+/-" type="button" class="btn"  value="+/-">
+<input name="No.%" type="button" class="btn"  value="%">
+<input name="No. " type="button" class="btn"  value=" ">
+</p>
+
+<p>
+<input name="No.7" type="button" class="btn" onClick="myFunction7()" value="7">
+<input name="No.8" type="button" class="btn" onClick="myFunction8()" value="8">
+<input name="No.9" type="button" class="btn" onClick="myFunction9()" value="9">
+<input name="No./" type="button" class="btn" onClick="myFunctionDvi()" value="/">
+</p>
+
+<p>
+<input name="No.4" type="button" class="btn" onClick="myFunction4()" value="4">
+<input name="No.5" type="button" class="btn" onClick="myFunction5()" value="5">
+<input name="No.6" type="button" class="btn" onClick="myFunction6()" value="6">
+<input name="No.*" type="button" class="btn" onClick="myFunctionMul()" value="*">
+</p>
+<p>
+<input name="No.1" type="button" class="btn" onClick="myFunction1()" value="1">
+<input name="No.2" type="button" class="btn" onClick="myFunction2()" value="2">
+<input name="No.3" type="button" class="btn" onClick="myFunction3()" value="3">
+<input name="No.+" type="button" class="btn" onClick="myFunctionPlu()" value="+">
+</p>
+<p>
+<input name="No.0" type="button" class="btn" onClick="myFunction0()" value="0">
+<input name="No.." type="button" class="btn" onClick="myFunctionD()" value=".">
+<input name="No.=" type="button" class="btn" onClick="myFunctionEqu()" value="=">
+<input name="No.-" type="button" class="btn" onClick="myFunctionSub()" value="-">
+</p>
+</body>
+</html>

@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title>HMI</title>
+<meta charset="utf-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+<table data-role="table" data-mode="columntoggle" class="ui-responsive" id="myTable">
+      <thead>
+        <tr>
+          <th>文字标签名称</th>
+          <th>SCAF_FB_设备状态</th>
+          <th>SCAF_FB_操作者状态</th>
+        </tr>
+      </thead>
+      <tbody>
+  <tr>
+    <td>语言 1, 状态 0</td>
+    <td>DEVICE_ST_0-设备不在原位，无法启动！</td>
+    <td>OPST_0-机构不在原位，无法启动！</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 1</td>
+    <td>DEVICE_ST_1-</td>
+    <td>OPST_1-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 2</td>
+    <td>DEVICE_ST_2-</td>
+    <td>OPST_2-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 3</td>
+    <td>DEVICE_ST_3-</td>
+    <td>OPST_3-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 4</td>
+    <td>DEVICE_ST_4-</td>
+    <td>OPST_4-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 5</td>
+    <td>DEVICE_ST_5-</td>
+    <td>OPST_5-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 6</td>
+    <td>DEVICE_ST_6-</td>
+    <td>OPST_6-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 7</td>
+    <td>DEVICE_ST_7-</td>
+    <td>OPST_7-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 8</td>
+    <td>DEVICE_ST_8-</td>
+    <td>OPST_8-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 9</td>
+    <td>DEVICE_ST_9-</td>
+    <td>OPST_9-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 10</td>
+    <td>DEVICE_ST_10-设备原位，等待启动！</td>
+    <td>OPST_10-机构原位，等待启动</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 11</td>
+    <td>DEVICE_ST_11-</td>
+    <td>OPST_11-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 12</td>
+    <td>DEVICE_ST_12-</td>
+    <td>OPST_12-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 13</td>
+    <td>DEVICE_ST_13-</td>
+    <td>OPST_13-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 14</td>
+    <td>DEVICE_ST_14-</td>
+    <td>OPST_14-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 15</td>
+    <td>DEVICE_ST_15-</td>
+    <td>OPST_15-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 16</td>
+    <td>DEVICE_ST_16-</td>
+    <td>OPST_16-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 17</td>
+    <td>DEVICE_ST_17-</td>
+    <td>OPST_17-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 18</td>
+    <td>DEVICE_ST_18-</td>
+    <td>OPST_18-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 19</td>
+    <td>DEVICE_ST_19-</td>
+    <td>OPST_19-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 20</td>
+    <td>DEVICE_ST_20-</td>
+    <td>OPST_20-自动运行中</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 21</td>
+    <td>DEVICE_ST_21-</td>
+    <td>OPST_21-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 22</td>
+    <td>DEVICE_ST_22-</td>
+    <td>OPST_22-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 23</td>
+    <td>DEVICE_ST_23-</td>
+    <td>OPST_23-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 24</td>
+    <td>DEVICE_ST_24-</td>
+    <td>OPST_24-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 25</td>
+    <td>DEVICE_ST_25-</td>
+    <td>OPST_25-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 26</td>
+    <td>DEVICE_ST_26-</td>
+    <td>OPST_26-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 27</td>
+    <td>DEVICE_ST_27-</td>
+    <td>OPST_27-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 28</td>
+    <td>DEVICE_ST_28-</td>
+    <td>OPST_28-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 29</td>
+    <td>DEVICE_ST_29-</td>
+    <td>OPST_29-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 30</td>
+    <td>DEVICE_ST_30-</td>
+    <td>OPST_30-不在自动模式，自动运行无法启动!</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 31</td>
+    <td>DEVICE_ST_31-</td>
+    <td>OPST_31-机构不在原位，无法启动！</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 32</td>
+    <td>DEVICE_ST_32-</td>
+    <td>OPST_32-未检测到工件!</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 33</td>
+    <td>DEVICE_ST_33-</td>
+    <td>OPST_33-参数设置错误!</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 34</td>
+    <td>DEVICE_ST_34-</td>
+    <td>OPST_34-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 35</td>
+    <td>DEVICE_ST_35-</td>
+    <td>OPST_35-伺服电机没有回原点！</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 36</td>
+    <td>DEVICE_ST_36-</td>
+    <td>OPST_36-传感器标定值设置错误！</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 37</td>
+    <td>DEVICE_ST_37-</td>
+    <td>OPST_37-不合格品隔离光电被遮挡或异常！</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 38</td>
+    <td>DEVICE_ST_38-</td>
+    <td>OPST_38-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 39</td>
+    <td>DEVICE_ST_39-</td>
+    <td>OPST_39-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 40</td>
+    <td>DEVICE_ST_40-</td>
+    <td>OPST_40-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 41</td>
+    <td>DEVICE_ST_41-</td>
+    <td>OPST_41-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 42</td>
+    <td>DEVICE_ST_42-</td>
+    <td>OPST_42-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 43</td>
+    <td>DEVICE_ST_43-</td>
+    <td>OPST_43-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 44</td>
+    <td>DEVICE_ST_44-</td>
+    <td>OPST_44-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 45</td>
+    <td>DEVICE_ST_45-</td>
+    <td>OPST_45-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 46</td>
+    <td>DEVICE_ST_46-</td>
+    <td>OPST_46-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 47</td>
+    <td>DEVICE_ST_47-</td>
+    <td>OPST_47-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 48</td>
+    <td>DEVICE_ST_48-</td>
+    <td>OPST_48-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 49</td>
+    <td>DEVICE_ST_49-</td>
+    <td>OPST_49-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 50</td>
+    <td>DEVICE_ST_50-</td>
+    <td>OPST_50 拖动气缸不在原位!</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 51</td>
+    <td>DEVICE_ST_51-</td>
+    <td>OPST_51 旋转气缸不在原位!</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 52</td>
+    <td>DEVICE_ST_52-</td>
+    <td>OPST_52 升降气缸不在原位!</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 53</td>
+    <td>DEVICE_ST_53-</td>
+    <td>OPST_53  移动气缸不在原位!</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 54</td>
+    <td>DEVICE_ST_54-</td>
+    <td>OPST_54 夹紧气缸不在原位!</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 55</td>
+    <td>DEVICE_ST_55-</td>
+    <td>OPST_55 伺服电机不在待命点!</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 56</td>
+    <td>DEVICE_ST_56-</td>
+    <td>OPST_56 伺服电机未回原点!</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 57</td>
+    <td>DEVICE_ST_57-</td>
+    <td>OPST_57-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 58</td>
+    <td>DEVICE_ST_58-</td>
+    <td>OPST_58-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 59</td>
+    <td>DEVICE_ST_59-</td>
+    <td>OPST_59-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 60</td>
+    <td>DEVICE_ST_60-</td>
+    <td>OPST_60-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 61</td>
+    <td>DEVICE_ST_61-</td>
+    <td>OPST_61-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 62</td>
+    <td>DEVICE_ST_62-</td>
+    <td>OPST_62-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 63</td>
+    <td>DEVICE_ST_63-</td>
+    <td>OPST_63-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 64</td>
+    <td>DEVICE_ST_64-</td>
+    <td>OPST_64-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 65</td>
+    <td>DEVICE_ST_65-</td>
+    <td>OPST_65-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 66</td>
+    <td>DEVICE_ST_66-</td>
+    <td>OPST_66-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 67</td>
+    <td>DEVICE_ST_67-</td>
+    <td>OPST_67-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 68</td>
+    <td>DEVICE_ST_68-</td>
+    <td>OPST_68-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 69</td>
+    <td>DEVICE_ST_69-</td>
+    <td>OPST_69-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 70</td>
+    <td>DEVICE_ST_70-</td>
+    <td>OPST_70-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 71</td>
+    <td>DEVICE_ST_71-</td>
+    <td>OPST_71-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 72</td>
+    <td>DEVICE_ST_72-</td>
+    <td>OPST_72-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 73</td>
+    <td>DEVICE_ST_73-</td>
+    <td>OPST_73-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 74</td>
+    <td>DEVICE_ST_74-</td>
+    <td>OPST_74-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 75</td>
+    <td>DEVICE_ST_75-</td>
+    <td>OPST_75-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 76</td>
+    <td>DEVICE_ST_76-</td>
+    <td>OPST_76-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 77</td>
+    <td>DEVICE_ST_77-</td>
+    <td>OPST_77-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 78</td>
+    <td>DEVICE_ST_78-</td>
+    <td>OPST_78-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 79</td>
+    <td>DEVICE_ST_79-</td>
+    <td>OPST_79-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 80</td>
+    <td>DEVICE_ST_80-</td>
+    <td>OPST_80-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 81</td>
+    <td>DEVICE_ST_81-</td>
+    <td>OPST_81-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 82</td>
+    <td>DEVICE_ST_82-</td>
+    <td>OPST_82-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 83</td>
+    <td>DEVICE_ST_83-</td>
+    <td>OPST_83-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 84</td>
+    <td>DEVICE_ST_84-</td>
+    <td>OPST_84-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 85</td>
+    <td>DEVICE_ST_85-</td>
+    <td>OPST_85-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 86</td>
+    <td>DEVICE_ST_86-</td>
+    <td>OPST_86-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 87</td>
+    <td>DEVICE_ST_87-</td>
+    <td>OPST_87-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 88</td>
+    <td>DEVICE_ST_88-</td>
+    <td>OPST_88-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 89</td>
+    <td>DEVICE_ST_89-</td>
+    <td>OPST_89-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 90</td>
+    <td>DEVICE_ST_90-</td>
+    <td>OPST_90-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 91</td>
+    <td>DEVICE_ST_91-</td>
+    <td>OPST_91-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 92</td>
+    <td>DEVICE_ST_92-</td>
+    <td>OPST_92-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 93</td>
+    <td>DEVICE_ST_93-</td>
+    <td>OPST_93-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 94</td>
+    <td>DEVICE_ST_94-</td>
+    <td>OPST_94-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 95</td>
+    <td>DEVICE_ST_95-</td>
+    <td>OPST_95-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 96</td>
+    <td>DEVICE_ST_96-</td>
+    <td>OPST_96-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 97</td>
+    <td>DEVICE_ST_97-</td>
+    <td>OPST_97-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 98</td>
+    <td>DEVICE_ST_98-</td>
+    <td>OPST_98-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 99</td>
+    <td>DEVICE_ST_99-</td>
+    <td>OPST_99-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 100</td>
+    <td>DEVICE_ST_100-</td>
+    <td>OPST_100-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 101</td>
+    <td>DEVICE_ST_101-</td>
+    <td>OPST_101-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 102</td>
+    <td>DEVICE_ST_102-</td>
+    <td>OPST_102-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 103</td>
+    <td>DEVICE_ST_103-</td>
+    <td>OPST_103-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 104</td>
+    <td>DEVICE_ST_104-</td>
+    <td>OPST_104-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 105</td>
+    <td>DEVICE_ST_105-</td>
+    <td>OPST_105-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 106</td>
+    <td>DEVICE_ST_106-</td>
+    <td>OPST_106-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 107</td>
+    <td>DEVICE_ST_107-</td>
+    <td>OPST_107-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 108</td>
+    <td>DEVICE_ST_108-</td>
+    <td>OPST_108-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 109</td>
+    <td>DEVICE_ST_109-</td>
+    <td>OPST_109-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 110</td>
+    <td>DEVICE_ST_110-</td>
+    <td>OPST_110-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 111</td>
+    <td>DEVICE_ST_111-</td>
+    <td>OPST_111-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 112</td>
+    <td>DEVICE_ST_112-</td>
+    <td>OPST_112-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 113</td>
+    <td>DEVICE_ST_113-</td>
+    <td>OPST_113-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 114</td>
+    <td>DEVICE_ST_114-</td>
+    <td>OPST_114-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 115</td>
+    <td>DEVICE_ST_115-</td>
+    <td>OPST_115-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 116</td>
+    <td>DEVICE_ST_116-</td>
+    <td>OPST_116-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 117</td>
+    <td>DEVICE_ST_117-</td>
+    <td>OPST_117-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 118</td>
+    <td>DEVICE_ST_118-</td>
+    <td>OPST_118-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 119</td>
+    <td>DEVICE_ST_119-</td>
+    <td>OPST_119-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 120</td>
+    <td>DEVICE_ST_120-</td>
+    <td>OPST_120-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 121</td>
+    <td>DEVICE_ST_121-</td>
+    <td>OPST_121-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 122</td>
+    <td>DEVICE_ST_122-</td>
+    <td>OPST_122-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 123</td>
+    <td>DEVICE_ST_123-</td>
+    <td>OPST_123-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 124</td>
+    <td>DEVICE_ST_124-</td>
+    <td>OPST_124-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 125</td>
+    <td>DEVICE_ST_125-</td>
+    <td>OPST_125-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 126</td>
+    <td>DEVICE_ST_126-</td>
+    <td>OPST_126-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 127</td>
+    <td>DEVICE_ST_127-</td>
+    <td>OPST_127-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 128</td>
+    <td>DEVICE_ST_128-</td>
+    <td>OPST_128-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 129</td>
+    <td>DEVICE_ST_129-</td>
+    <td>OPST_129-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 130</td>
+    <td>DEVICE_ST_130-</td>
+    <td>OPST_130-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 131</td>
+    <td>DEVICE_ST_131-</td>
+    <td>OPST_131-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 132</td>
+    <td>DEVICE_ST_132-</td>
+    <td>OPST_132-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 133</td>
+    <td>DEVICE_ST_133-</td>
+    <td>OPST_133-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 134</td>
+    <td>DEVICE_ST_134-</td>
+    <td>OPST_134-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 135</td>
+    <td>DEVICE_ST_135-</td>
+    <td>OPST_135-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 136</td>
+    <td>DEVICE_ST_136-</td>
+    <td>OPST_136-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 137</td>
+    <td>DEVICE_ST_137-</td>
+    <td>OPST_137-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 138</td>
+    <td>DEVICE_ST_138-</td>
+    <td>OPST_138-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 139</td>
+    <td>DEVICE_ST_139-</td>
+    <td>OPST_139-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 140</td>
+    <td>DEVICE_ST_140-</td>
+    <td>OPST_140-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 141</td>
+    <td>DEVICE_ST_141-</td>
+    <td>OPST_141-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 142</td>
+    <td>DEVICE_ST_142-</td>
+    <td>OPST_142-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 143</td>
+    <td>DEVICE_ST_143-</td>
+    <td>OPST_143-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 144</td>
+    <td>DEVICE_ST_144-</td>
+    <td>OPST_144-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 145</td>
+    <td>DEVICE_ST_145-</td>
+    <td>OPST_145-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 146</td>
+    <td>DEVICE_ST_146-</td>
+    <td>OPST_146-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 147</td>
+    <td>DEVICE_ST_147-</td>
+    <td>OPST_147-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 148</td>
+    <td>DEVICE_ST_148-</td>
+    <td>OPST_148-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 149</td>
+    <td>DEVICE_ST_149-</td>
+    <td>OPST_149-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 150</td>
+    <td>DEVICE_ST_150-</td>
+    <td>OPST_150-复位运行中</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 151</td>
+    <td>DEVICE_ST_151-</td>
+    <td>OPST_151-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 152</td>
+    <td>DEVICE_ST_152-</td>
+    <td>OPST_152-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 153</td>
+    <td>DEVICE_ST_153-</td>
+    <td>OPST_153-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 154</td>
+    <td>DEVICE_ST_154-</td>
+    <td>OPST_154-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 155</td>
+    <td>DEVICE_ST_155-</td>
+    <td>OPST_155-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 156</td>
+    <td>DEVICE_ST_156-</td>
+    <td>OPST_156-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 157</td>
+    <td>DEVICE_ST_157-</td>
+    <td>OPST_157-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 158</td>
+    <td>DEVICE_ST_158-</td>
+    <td>OPST_158-未检测到工件!</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 159</td>
+    <td>DEVICE_ST_159-</td>
+    <td>OPST_159-不合格产品未隔离!</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 160</td>
+    <td>DEVICE_ST_160-</td>
+    <td>OPST_160-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 161</td>
+    <td>DEVICE_ST_161-</td>
+    <td>OPST_161-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 162</td>
+    <td>DEVICE_ST_162-</td>
+    <td>OPST_162-设备暂停停中</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 163</td>
+    <td>DEVICE_ST_163-</td>
+    <td>OPST_163-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 164</td>
+    <td>DEVICE_ST_164-</td>
+    <td>OPST_164-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 165</td>
+    <td>DEVICE_ST_165-</td>
+    <td>OPST_165-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 166</td>
+    <td>DEVICE_ST_166-</td>
+    <td>OPST_166-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 167</td>
+    <td>DEVICE_ST_167-</td>
+    <td>OPST_167-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 168</td>
+    <td>DEVICE_ST_168-</td>
+    <td>OPST_168-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 169</td>
+    <td>DEVICE_ST_169-</td>
+    <td>OPST_169-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 170</td>
+    <td>DEVICE_ST_170-</td>
+    <td>OPST_170-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 171</td>
+    <td>DEVICE_ST_171-</td>
+    <td>OPST_171-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 172</td>
+    <td>DEVICE_ST_172-</td>
+    <td>OPST_172-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 173</td>
+    <td>DEVICE_ST_173-</td>
+    <td>OPST_173-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 174</td>
+    <td>DEVICE_ST_174-</td>
+    <td>OPST_174-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 175</td>
+    <td>DEVICE_ST_175-</td>
+    <td>OPST_175-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 176</td>
+    <td>DEVICE_ST_176-</td>
+    <td>OPST_176-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 177</td>
+    <td>DEVICE_ST_177-</td>
+    <td>OPST_177-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 178</td>
+    <td>DEVICE_ST_178-</td>
+    <td>OPST_178-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 179</td>
+    <td>DEVICE_ST_179-</td>
+    <td>OPST_179-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 180</td>
+    <td>DEVICE_ST_180-</td>
+    <td>OPST_180-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 181</td>
+    <td>DEVICE_ST_181-</td>
+    <td>OPST_181-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 182</td>
+    <td>DEVICE_ST_182-</td>
+    <td>OPST_182-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 183</td>
+    <td>DEVICE_ST_183-</td>
+    <td>OPST_183-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 184</td>
+    <td>DEVICE_ST_184-</td>
+    <td>OPST_184-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 185</td>
+    <td>DEVICE_ST_185-</td>
+    <td>OPST_185-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 186</td>
+    <td>DEVICE_ST_186-</td>
+    <td>OPST_186-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 187</td>
+    <td>DEVICE_ST_187-</td>
+    <td>OPST_187-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 188</td>
+    <td>DEVICE_ST_188-</td>
+    <td>OPST_188-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 189</td>
+    <td>DEVICE_ST_189-</td>
+    <td>OPST_189-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 190</td>
+    <td>DEVICE_ST_190-</td>
+    <td>OPST_190-条码未写入！</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 191</td>
+    <td>DEVICE_ST_191-</td>
+    <td>OPST_191-查询产品为不合格状态！</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 192</td>
+    <td>DEVICE_ST_192-</td>
+    <td>OPST_192-无UNLoadStatus！</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 193</td>
+    <td>DEVICE_ST_193-</td>
+    <td>OPST_193-未LoadOK！</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 194</td>
+    <td>DEVICE_ST_194-</td>
+    <td>OPST_194-无LoadStatus！</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 195</td>
+    <td>DEVICE_ST_195-</td>
+    <td>OPST_195-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 196</td>
+    <td>DEVICE_ST_196-</td>
+    <td>OPST_196-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 197</td>
+    <td>DEVICE_ST_197-</td>
+    <td>OPST_197-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 198</td>
+    <td>DEVICE_ST_198-</td>
+    <td>OPST_198-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 199</td>
+    <td>DEVICE_ST_199-</td>
+    <td>OPST_199-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 200</td>
+    <td>DEVICE_ST_200-</td>
+    <td>OPST_200-安全光幕异常！</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 201</td>
+    <td>DEVICE_ST_201-</td>
+    <td>OPST_201-自动循环超时！</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 202</td>
+    <td>DEVICE_ST_202-</td>
+    <td>OPST_202-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 203</td>
+    <td>DEVICE_ST_203-</td>
+    <td>OPST_203-机构复位超时！</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 204</td>
+    <td>DEVICE_ST_204-</td>
+    <td>OPST_204-不合格产品未隔离！</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 205</td>
+    <td>DEVICE_ST_205-</td>
+    <td>OPST_205-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 206</td>
+    <td>DEVICE_ST_206-</td>
+    <td>OPST_206-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 207</td>
+    <td>DEVICE_ST_207-</td>
+    <td>OPST_207-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 208</td>
+    <td>DEVICE_ST_208-</td>
+    <td>OPST_208-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 209</td>
+    <td>DEVICE_ST_209-</td>
+    <td>OPST_209-机构运行超时！</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 210</td>
+    <td>DEVICE_ST_210-</td>
+    <td>OPST_210-无LoadStatus</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 211</td>
+    <td>DEVICE_ST_211-</td>
+    <td>OPST_211-气源压力不足！</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 212</td>
+    <td>DEVICE_ST_212-</td>
+    <td>OPST_212-连续3件不合格！</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 213</td>
+    <td>DEVICE_ST_213-</td>
+    <td>OPST_213-泄漏仪异常！</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 214</td>
+    <td>DEVICE_ST_214-</td>
+    <td>OPST_214-伺服电缸异常！</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 215</td>
+    <td>DEVICE_ST_215-</td>
+    <td>OPST_215-分布式IO异常！</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 216</td>
+    <td>DEVICE_ST_216-</td>
+    <td>OPST_216-阀岛异常！</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 217</td>
+    <td>DEVICE_ST_217-</td>
+    <td>OPST_217-视觉系统异常！</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 218</td>
+    <td>DEVICE_ST_218-</td>
+    <td>OPST_218-变频器异常！</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 219</td>
+    <td>DEVICE_ST_219-</td>
+    <td>OPST_219-伺服异常！</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 220</td>
+    <td>DEVICE_ST_220-</td>
+    <td>OPST_220-UNLOADINSERTERROR！</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 221</td>
+    <td>DEVICE_ST_221-</td>
+    <td>OPST_221-UNLOADUPDATAERROR！</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 222</td>
+    <td>DEVICE_ST_222-</td>
+    <td>OPST_222-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 223</td>
+    <td>DEVICE_ST_223-</td>
+    <td>OPST_223-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 224</td>
+    <td>DEVICE_ST_224-</td>
+    <td>OPST_224-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 225</td>
+    <td>DEVICE_ST_225-</td>
+    <td>OPST_225-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 226</td>
+    <td>DEVICE_ST_226-</td>
+    <td>OPST_226-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 227</td>
+    <td>DEVICE_ST_227-</td>
+    <td>OPST_227-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 228</td>
+    <td>DEVICE_ST_228-</td>
+    <td>OPST_228-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 229</td>
+    <td>DEVICE_ST_229-</td>
+    <td>OPST_229-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 230</td>
+    <td>DEVICE_ST_230-</td>
+    <td>OPST_230-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 231</td>
+    <td>DEVICE_ST_231-</td>
+    <td>OPST_231-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 232</td>
+    <td>DEVICE_ST_232-</td>
+    <td>OPST_232-工序错误！</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 233</td>
+    <td>DEVICE_ST_233-</td>
+    <td>OPST_233-型号不匹配！</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 234</td>
+    <td>DEVICE_ST_234-</td>
+    <td>OPST_234-无产品记录！</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 235</td>
+    <td>DEVICE_ST_235-</td>
+    <td>OPST_235-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 236</td>
+    <td>DEVICE_ST_236-</td>
+    <td>OPST_236-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 237</td>
+    <td>DEVICE_ST_237-</td>
+    <td>OPST_237-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 238</td>
+    <td>DEVICE_ST_238-</td>
+    <td>OPST_238-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 239</td>
+    <td>DEVICE_ST_239-</td>
+    <td>OPST_239-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 240</td>
+    <td>DEVICE_ST_240-</td>
+    <td>OPST_240-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 241</td>
+    <td>DEVICE_ST_241-</td>
+    <td>OPST_241-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 242</td>
+    <td>DEVICE_ST_242-</td>
+    <td>OPST_242-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 243</td>
+    <td>DEVICE_ST_243-</td>
+    <td>OPST_243-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 244</td>
+    <td>DEVICE_ST_244-</td>
+    <td>OPST_244-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 245</td>
+    <td>DEVICE_ST_245-</td>
+    <td>OPST_245-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 246</td>
+    <td>DEVICE_ST_246-</td>
+    <td>OPST_246-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 247</td>
+    <td>DEVICE_ST_247-</td>
+    <td>OPST_247-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 248</td>
+    <td>DEVICE_ST_248-</td>
+    <td>OPST_248-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 249</td>
+    <td>DEVICE_ST_249-手动模式</td>
+    <td>OPST_249-安全门锁异常！</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 250</td>
+    <td>DEVICE_ST_250-复位运行中</td>
+    <td>OPST_250-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 251</td>
+    <td>DEVICE_ST_251-</td>
+    <td>OPST_251-</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 252</td>
+    <td>DEVICE_ST_252-异常停止！</td>
+    <td>OPST_252-安全光幕异常！</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 253</td>
+    <td>DEVICE_ST_253-急停停止！</td>
+    <td>OPST_253-紧急停止按钮按下！</td>
+  </tr>
+  <tr>
+    <td>语言 1, 状态 254</td>
+    <td>DEVICE_ST_254-</td>
+    <td>OPST_254-</td>
+  </tr>
+ </tbody>
+</table>
+</body>
+</html>

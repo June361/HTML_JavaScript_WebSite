@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+<title>caculator</title> 
+
+<script type="text/javascript">
+function myFunctionEqu()
+{
+	var Sex;
+	var Height;
+	var R;
+
+	sex=document.getElementById("sex");   // 找到元素
+	Sex=sex.value;
+	height=document.getElementById("height");   // 找到元素
+	Height=height.value;
+	if(Sex=="male")
+	{
+	r=document.getElementById("display3");    // 改变内容
+	R=(Number(Height)-80)*0.7;
+	r.value=R;	
+	}
+	if(Sex=="female")
+	{
+	r=document.getElementById("display3");    // 改变内容
+	R=(Number(Height)-70)*0.6;
+	r.value=R;	
+	}
+}
+</script>
+
+</head>
+
+<body>
+<p>身高 （cm）</p>
+<p>
+  <input name="display1" type="text" class="textbox" id="height" value="">
+</p>
+<p>性别</p>
+<form action="" method="post" name="form1" class="listbox">
+<select name="sex" class="listbox" id="sex">
+	<option value="male">男</option>
+    <option value="female">女</option>  	
+  </select>
+</form>
+</p>
+<p>计算结果（kg）</p>
+<p>
+  <input name="display3" type="text" class="textbox" id="display3" value="">
+</p>
+<p>
+  <input name="Result" type="button" class="btn" onClick="myFunctionEqu()" value="计算">
+</p>
+</body>
+</html>

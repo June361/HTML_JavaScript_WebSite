@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+function changeImage()
+{
+element=document.getElementById('myimage')
+if (element.src.match("eg_bulbon.gif"))
+  {
+  element.src="eg_bulboff.gif";
+  }
+else
+  {
+  element.src="eg_bulbon.gif";
+  }
+}
+</script>
+</head>
+<body>
+<img src="eg_bulboff.gif" width="252" height="388" id="myimage" onclick="changeImage()">
+
+<p>点击灯泡来点亮或熄灭这盏灯</p>
+
+</body>
+</html>
+

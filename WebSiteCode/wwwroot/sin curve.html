@@ -1,0 +1,53 @@
+﻿<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=0.4, user-scalable=no"/>
+<style type="text/css">
+
+
+.dvi01 {
+	height: 300px;
+	width: 300px;
+}
+</style>
+<canvas id="myCanvas" width="750" height="400" style="border:1px solid #c3c3c3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script type="text/javascript">
+var step;
+	step=0;
+function draw()
+{
+	var y=new Array();
+	var c=document.getElementById("myCanvas");
+	var cxt=c.getContext("2d");
+	for(var i=0;i<750;i++)
+	{
+		y[i]=Math.sin((i+step)/36)*150+200;
+	}
+	cxt.clearRect ( 0 , 0 , 750 , 400 );
+	cxt.beginPath();
+	cxt.moveTo(0,400);
+	for(var i=0;i<750;i++)
+	{
+		cxt.lineTo(i,y[i]);
+	}	
+	cxt.stroke();
+	step++;
+}
+function startTime()
+{
+	draw();
+	t=setTimeout('startTime()',10)
+}
+
+</script>
+<body>
+<p>
+  <input name="btn" type="button" class="btn" onClick="draw()" value="绘图">
+</p>
+<p>
+  <input name="btn" type="button" class="btn" onClick="startTime()" value="自动绘图启动">
+</p>
+</body>
+</html>

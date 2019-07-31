@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head> 
+<meta charset="utf-8"> 
+<title>Force Caculator</title> 
+<script type="text/javascript">
+ $(document).ready(function(){
+
+   $("#button1").click(function(){
+
+        var D;
+	var P;
+	var R;
+
+	D=$("#display1").val();
+	P=$("#display2").val();
+	R=Number(D)*Number(D)*Math.PI*Number(P)/4;
+	$("#display3").val(Number(R));
+ });
+
+}); 
+</script>
+
+</head>
+
+<body>
+<p>气缸直径 （mm）</p>
+<p>
+  <input name="display1" type="text" class="textbox" id="display1" value="">
+</p>
+<p>气压（MPa）</p>
+<p>
+  <input name="display2" type="text" class="textbox" id="display2" value="">
+</p>
+<p>计算结果（N）</p>
+<p>
+  <input name="display3" type="text" class="textbox" id="display3" value="">
+</p>
+<p>
+  <button id="button1"><code>计算</code></button>
+</p>
+</body>
+</html>

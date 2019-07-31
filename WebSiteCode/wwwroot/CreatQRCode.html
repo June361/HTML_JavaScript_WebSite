@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+<meta charset="utf-8"/>
+<title> 生成二维码 </title>
+<script src="qrcode.js"></script>
+<script type="text/javascript">
+window.onload = function(){
+
+    // 二维码对象
+    var qrcode;
+
+    // 默认设置
+    var content;
+    var size;
+
+    // 设置点击事件
+    document.getElementById("send").onclick =function(){
+        
+        // 获取内容
+        content = document.getElementById("content").value;
+        content = content.replace(/(^\s*)|(\s*$)/g, "");
+
+        // 获取尺寸
+        size = document.getElementById("size").value;
+
+        // 检查内容
+        if(content==''){
+            alert('请输入内容！');
+            return false;
+        }
+
+        // 检查尺寸
+        if(!/^[0-9]*[1-9][0-9]*$/.test(size)){
+            alert('请输入正整数');
+            return false;
+        }
+
+        if(size<100 || size>300){
+            alert('尺寸范围在100～300');
+            return false;
+        }
+
+        // 清除上一次的二维码
+        if(qrcode){
+            qrcode.clear();
+        }
+
+        // 创建二维码
+        qrcode = new QRCode(document.getElementById("qrcode"), {
+            width : size,//设置宽高
+            height : size
+        });
+
+        qrcode.makeCode(document.getElementById("content").value);
+    }
+
+}
+
+</script>
+
+<style type="text/css">
+.dvi01 {
+	height: 300px;
+	width: 300px;
+}
+</style>
+
+</head>
+
+<body>
+ <div class="dvi01" id="qrcode"></div>
+    <p>内容：</p>
+<p>
+  <input type="text" class="textbox" id="content" value="" />
+    </p>
+<p>尺寸：</p>
+<p>
+  <input type="text" class="textbox" id="size" value="300">
+</p>
+
+
+<p>
+  <input name="button" type="submit" class="btn" id="send" value="生成二维码">
+</p>
+   
+</body>
+</html>

@@ -1,0 +1,2439 @@
+<!DOCTYPE html>
+
+<head>
+
+<title>Document</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<style>
+
+.demo {
+width: 62px;
+height: 18px;
+position:absolute;
+top:400px;
+left:800px;
+background-color:pink;
+/* Rotate div */
+transform: rotate(0deg);
+-ms-transform: rotate(0deg);
+/* Internet Explorer */
+-moz-transform: rotate(0deg);
+/* Firefox */
+-webkit-transform: rotate(0deg);
+/* Safari 睿 Chrome */
+-o-transform: rotate(0deg);
+/* Opera */
+/* class="demo" */
+}
+</style>
+
+<script type="text/javascript">
+
+var mtemp=99;
+
+var htemp=99;
+
+var stemp=99;
+
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+var ms=today.getMilliseconds();
+var tmove=0;
+
+if(ms<1000)
+{
+tmove=ms/500;
+if(tmove>=1)
+{
+tmove=1
+}
+}
+
+if(htemp != h)
+{
+
+if(tmove >= 1)
+{
+htemp=h;
+}
+
+angleh="rotate("+(h-1+tmove)*15+"deg)";
+topPositionh=(Math.sin(Math.PI*2*((h-1+tmove)/24))*200+400)+"px";
+leftPositionh=(Math.cos(Math.PI*2*((h-1+tmove)/24))*200+400)+"px";
+
+angleh01="rotate("+(h-1+tmove-1)*15+"deg)";
+topPositionh01=(Math.sin(Math.PI*2*((h-1+tmove-1)/24))*200+400)+"px";
+leftPositionh01=(Math.cos(Math.PI*2*((h-1+tmove-1)/24))*200+400)+"px";
+
+angleh02="rotate("+(h-1+tmove-2)*15+"deg)";
+topPositionh02=(Math.sin(Math.PI*2*((h-1+tmove-2)/24))*200+400)+"px";
+leftPositionh02=(Math.cos(Math.PI*2*((h-1+tmove-2)/24))*200+400)+"px";
+
+angleh03="rotate("+(h-1+tmove-3)*15+"deg)";
+topPositionh03=(Math.sin(Math.PI*2*((h-1+tmove-3)/24))*200+400)+"px";
+leftPositionh03=(Math.cos(Math.PI*2*((h-1+tmove-3)/24))*200+400)+"px";
+
+angleh04="rotate("+(h-1+tmove-4)*15+"deg)";
+topPositionh04=(Math.sin(Math.PI*2*((h-1+tmove-4)/24))*200+400)+"px";
+leftPositionh04=(Math.cos(Math.PI*2*((h-1+tmove-4)/24))*200+400)+"px";
+
+angleh05="rotate("+(h-1+tmove-5)*15+"deg)";
+topPositionh05=(Math.sin(Math.PI*2*((h-1+tmove-5)/24))*200+400)+"px";
+leftPositionh05=(Math.cos(Math.PI*2*((h-1+tmove-5)/24))*200+400)+"px";
+
+angleh06="rotate("+(h-1+tmove-6)*15+"deg)";
+topPositionh06=(Math.sin(Math.PI*2*((h-1+tmove-6)/24))*200+400)+"px";
+leftPositionh06=(Math.cos(Math.PI*2*((h-1+tmove-6)/24))*200+400)+"px";
+
+angleh07="rotate("+(h-1+tmove-7)*15+"deg)";
+topPositionh07=(Math.sin(Math.PI*2*((h-1+tmove-7)/24))*200+400)+"px";
+leftPositionh07=(Math.cos(Math.PI*2*((h-1+tmove-7)/24))*200+400)+"px";
+
+angleh08="rotate("+(h-1+tmove-8)*15+"deg)";
+topPositionh08=(Math.sin(Math.PI*2*((h-1+tmove-8)/24))*200+400)+"px";
+leftPositionh08=(Math.cos(Math.PI*2*((h-1+tmove-8)/24))*200+400)+"px";
+
+angleh09="rotate("+(h-1+tmove-9)*15+"deg)";
+topPositionh09=(Math.sin(Math.PI*2*((h-1+tmove-9)/24))*200+400)+"px";
+leftPositionh09=(Math.cos(Math.PI*2*((h-1+tmove-9)/24))*200+400)+"px";
+
+angleh10="rotate("+(h-1+tmove-10)*15+"deg)";
+topPositionh10=(Math.sin(Math.PI*2*((h-1+tmove-10)/24))*200+400)+"px";
+leftPositionh10=(Math.cos(Math.PI*2*((h-1+tmove-10)/24))*200+400)+"px";
+
+angleh11="rotate("+(h-1+tmove-11)*15+"deg)";
+topPositionh11=(Math.sin(Math.PI*2*((h-1+tmove-11)/24))*200+400)+"px";
+leftPositionh11=(Math.cos(Math.PI*2*((h-1+tmove-11)/24))*200+400)+"px";
+
+angleh12="rotate("+(h-1+tmove-12)*15+"deg)";
+topPositionh12=(Math.sin(Math.PI*2*((h-1+tmove-12)/24))*200+400)+"px";
+leftPositionh12=(Math.cos(Math.PI*2*((h-1+tmove-12)/24))*200+400)+"px";
+
+angleh13="rotate("+(h-1+tmove-13)*15+"deg)";
+topPositionh13=(Math.sin(Math.PI*2*((h-1+tmove-13)/24))*200+400)+"px";
+leftPositionh13=(Math.cos(Math.PI*2*((h-1+tmove-13)/24))*200+400)+"px";
+
+angleh14="rotate("+(h-1+tmove-14)*15+"deg)";
+topPositionh14=(Math.sin(Math.PI*2*((h-1+tmove-14)/24))*200+400)+"px";
+leftPositionh14=(Math.cos(Math.PI*2*((h-1+tmove-14)/24))*200+400)+"px";
+
+angleh15="rotate("+(h-1+tmove-15)*15+"deg)";
+topPositionh15=(Math.sin(Math.PI*2*((h-1+tmove-15)/24))*200+400)+"px";
+leftPositionh15=(Math.cos(Math.PI*2*((h-1+tmove-15)/24))*200+400)+"px";
+
+angleh16="rotate("+(h-1+tmove-16)*15+"deg)";
+topPositionh16=(Math.sin(Math.PI*2*((h-1+tmove-16)/24))*200+400)+"px";
+leftPositionh16=(Math.cos(Math.PI*2*((h-1+tmove-16)/24))*200+400)+"px";
+
+angleh17="rotate("+(h-1+tmove-17)*15+"deg)";
+topPositionh17=(Math.sin(Math.PI*2*((h-1+tmove-17)/24))*200+400)+"px";
+leftPositionh17=(Math.cos(Math.PI*2*((h-1+tmove-17)/24))*200+400)+"px";
+
+angleh18="rotate("+(h-1+tmove-18)*15+"deg)";
+topPositionh18=(Math.sin(Math.PI*2*((h-1+tmove-18)/24))*200+400)+"px";
+leftPositionh18=(Math.cos(Math.PI*2*((h-1+tmove-18)/24))*200+400)+"px";
+
+angleh19="rotate("+(h-1+tmove-19)*15+"deg)";
+topPositionh19=(Math.sin(Math.PI*2*((h-1+tmove-19)/24))*200+400)+"px";
+leftPositionh19=(Math.cos(Math.PI*2*((h-1+tmove-19)/24))*200+400)+"px";
+
+angleh20="rotate("+(h-1+tmove-20)*15+"deg)";
+topPositionh20=(Math.sin(Math.PI*2*((h-1+tmove-20)/24))*200+400)+"px";
+leftPositionh20=(Math.cos(Math.PI*2*((h-1+tmove-20)/24))*200+400)+"px";
+
+angleh21="rotate("+(h-1+tmove-21)*15+"deg)";
+topPositionh21=(Math.sin(Math.PI*2*((h-1+tmove-21)/24))*200+400)+"px";
+leftPositionh21=(Math.cos(Math.PI*2*((h-1+tmove-21)/24))*200+400)+"px";
+
+angleh22="rotate("+(h-1+tmove-22)*15+"deg)";
+topPositionh22=(Math.sin(Math.PI*2*((h-1+tmove-22)/24))*200+400)+"px";
+leftPositionh22=(Math.cos(Math.PI*2*((h-1+tmove-22)/24))*200+400)+"px";
+
+angleh23="rotate("+(h-1+tmove-23)*15+"deg)";
+topPositionh23=(Math.sin(Math.PI*2*((h-1+tmove-23)/24))*200+400)+"px";
+leftPositionh23=(Math.cos(Math.PI*2*((h-1+tmove-23)/24))*200+400)+"px";
+
+//
+setStyleh('background-color','rgba(0,0,0,0)');
+setStyleh('transform',angleh);
+setStyleh('top',topPositionh);
+setStyleh('left',leftPositionh);
+
+setStyleh01('background-color','rgba(0,0,0,0)');
+setStyleh01('transform',angleh01);
+setStyleh01('top',topPositionh01);
+setStyleh01('left',leftPositionh01);
+
+setStyleh02('background-color','rgba(0,0,0,0)');
+setStyleh02('transform',angleh02);
+setStyleh02('top',topPositionh02);
+setStyleh02('left',leftPositionh02);
+
+setStyleh03('background-color','rgba(0,0,0,0)');
+setStyleh03('transform',angleh03);
+setStyleh03('top',topPositionh03);
+setStyleh03('left',leftPositionh03);
+
+setStyleh04('background-color','rgba(0,0,0,0)');
+setStyleh04('transform',angleh04);
+setStyleh04('top',topPositionh04);
+setStyleh04('left',leftPositionh04);
+
+setStyleh05('background-color','rgba(0,0,0,0)');
+setStyleh05('transform',angleh05);
+setStyleh05('top',topPositionh05);
+setStyleh05('left',leftPositionh05);
+
+setStyleh06('background-color','rgba(0,0,0,0)');
+setStyleh06('transform',angleh06);
+setStyleh06('top',topPositionh06);
+setStyleh06('left',leftPositionh06);
+
+setStyleh07('background-color','rgba(0,0,0,0)');
+setStyleh07('transform',angleh07);
+setStyleh07('top',topPositionh07);
+setStyleh07('left',leftPositionh07);
+
+setStyleh08('background-color','rgba(0,0,0,0)');
+setStyleh08('transform',angleh08);
+setStyleh08('top',topPositionh08);
+setStyleh08('left',leftPositionh08);
+
+setStyleh09('background-color','rgba(0,0,0,0)');
+setStyleh09('transform',angleh09);
+setStyleh09('top',topPositionh09);
+setStyleh09('left',leftPositionh09);
+
+setStyleh10('background-color','rgba(0,0,0,0)');
+setStyleh10('transform',angleh10);
+setStyleh10('top',topPositionh10);
+setStyleh10('left',leftPositionh10);
+
+setStyleh11('background-color','rgba(0,0,0,0)');
+setStyleh11('transform',angleh11);
+setStyleh11('top',topPositionh11);
+setStyleh11('left',leftPositionh11);
+
+setStyleh12('background-color','rgba(0,0,0,0)');
+setStyleh12('transform',angleh12);
+setStyleh12('top',topPositionh12);
+setStyleh12('left',leftPositionh12);
+
+setStyleh13('background-color','rgba(0,0,0,0)');
+setStyleh13('transform',angleh13);
+setStyleh13('top',topPositionh13);
+setStyleh13('left',leftPositionh13);
+
+setStyleh14('background-color','rgba(0,0,0,0)');
+setStyleh14('transform',angleh14);
+setStyleh14('top',topPositionh14);
+setStyleh14('left',leftPositionh14);
+
+setStyleh15('background-color','rgba(0,0,0,0)');
+setStyleh15('transform',angleh15);
+setStyleh15('top',topPositionh15);
+setStyleh15('left',leftPositionh15);
+
+setStyleh16('background-color','rgba(0,0,0,0)');
+setStyleh16('transform',angleh16);
+setStyleh16('top',topPositionh16);
+setStyleh16('left',leftPositionh16);
+
+setStyleh17('background-color','rgba(0,0,0,0)');
+setStyleh17('transform',angleh17);
+setStyleh17('top',topPositionh17);
+setStyleh17('left',leftPositionh17);
+
+setStyleh18('background-color','rgba(0,0,0,0)');
+setStyleh18('transform',angleh18);
+setStyleh18('top',topPositionh18);
+setStyleh18('left',leftPositionh18);
+
+setStyleh19('background-color','rgba(0,0,0,0)');
+setStyleh19('transform',angleh19);
+setStyleh19('top',topPositionh19);
+setStyleh19('left',leftPositionh19);
+
+setStyleh20('background-color','rgba(0,0,0,0)');
+setStyleh20('transform',angleh20);
+setStyleh20('top',topPositionh20);
+setStyleh20('left',leftPositionh20);
+
+setStyleh21('background-color','rgba(0,0,0,0)');
+setStyleh21('transform',angleh21);
+setStyleh21('top',topPositionh21);
+setStyleh21('left',leftPositionh21);
+
+setStyleh22('background-color','rgba(0,0,0,0)');
+setStyleh22('transform',angleh22);
+setStyleh22('top',topPositionh22);
+setStyleh22('left',leftPositionh22);
+
+setStyleh23('background-color','rgba(0,0,0,0)');
+setStyleh23('transform',angleh23);
+setStyleh23('top',topPositionh23);
+setStyleh23('left',leftPositionh23);
+
+}
+
+if(mtemp != m)
+{
+
+if(tmove >= 1)
+{
+mtemp=m;
+}
+
+anglem="rotate("+(m-1+tmove)*6+"deg)";
+topPositionm=(Math.sin(Math.PI*2*(m-1+tmove)/60)*230+400)+"px";
+leftPositionm=(Math.cos(Math.PI*2*(m-1+tmove)/60)*230+400)+"px";
+
+anglem01="rotate("+(m-1+tmove-1)*6+"deg)";
+topPositionm01=(Math.sin(Math.PI*2*(m-1+tmove-1)/60)*230+400)+"px";
+leftPositionm01=(Math.cos(Math.PI*2*(m-1+tmove-1)/60)*230+400)+"px";
+
+anglem02="rotate("+(m-1+tmove-2)*6+"deg)";
+topPositionm02=(Math.sin(Math.PI*2*(m-1+tmove-2)/60)*230+400)+"px";
+leftPositionm02=(Math.cos(Math.PI*2*(m-1+tmove-2)/60)*230+400)+"px";
+
+anglem03="rotate("+(m-1+tmove-3)*6+"deg)";
+topPositionm03=(Math.sin(Math.PI*2*(m-1+tmove-3)/60)*230+400)+"px";
+leftPositionm03=(Math.cos(Math.PI*2*(m-1+tmove-3)/60)*230+400)+"px";
+
+anglem04="rotate("+(m-1+tmove-4)*6+"deg)";
+topPositionm04=(Math.sin(Math.PI*2*(m-1+tmove-4)/60)*230+400)+"px";
+leftPositionm04=(Math.cos(Math.PI*2*(m-1+tmove-4)/60)*230+400)+"px";
+
+anglem05="rotate("+(m-1+tmove-5)*6+"deg)";
+topPositionm05=(Math.sin(Math.PI*2*(m-1+tmove-5)/60)*230+400)+"px";
+leftPositionm05=(Math.cos(Math.PI*2*(m-1+tmove-5)/60)*230+400)+"px";
+
+anglem06="rotate("+(m-1+tmove-6)*6+"deg)";
+topPositionm06=(Math.sin(Math.PI*2*(m-1+tmove-6)/60)*230+400)+"px";
+leftPositionm06=(Math.cos(Math.PI*2*(m-1+tmove-6)/60)*230+400)+"px";
+
+anglem07="rotate("+(m-1+tmove-7)*6+"deg)";
+topPositionm07=(Math.sin(Math.PI*2*(m-1+tmove-7)/60)*230+400)+"px";
+leftPositionm07=(Math.cos(Math.PI*2*(m-1+tmove-7)/60)*230+400)+"px";
+
+anglem08="rotate("+(m-1+tmove-8)*6+"deg)";
+topPositionm08=(Math.sin(Math.PI*2*(m-1+tmove-8)/60)*230+400)+"px";
+leftPositionm08=(Math.cos(Math.PI*2*(m-1+tmove-8)/60)*230+400)+"px";
+
+anglem09="rotate("+(m-1+tmove-9)*6+"deg)";
+topPositionm09=(Math.sin(Math.PI*2*(m-1+tmove-9)/60)*230+400)+"px";
+leftPositionm09=(Math.cos(Math.PI*2*(m-1+tmove-9)/60)*230+400)+"px";
+
+anglem10="rotate("+(m-1+tmove-10)*6+"deg)";
+topPositionm10=(Math.sin(Math.PI*2*(m-1+tmove-10)/60)*230+400)+"px";
+leftPositionm10=(Math.cos(Math.PI*2*(m-1+tmove-10)/60)*230+400)+"px";
+
+anglem11="rotate("+(m-1+tmove-11)*6+"deg)";
+topPositionm11=(Math.sin(Math.PI*2*(m-1+tmove-11)/60)*230+400)+"px";
+leftPositionm11=(Math.cos(Math.PI*2*(m-1+tmove-11)/60)*230+400)+"px";
+
+anglem12="rotate("+(m-1+tmove-12)*6+"deg)";
+topPositionm12=(Math.sin(Math.PI*2*(m-1+tmove-12)/60)*230+400)+"px";
+leftPositionm12=(Math.cos(Math.PI*2*(m-1+tmove-12)/60)*230+400)+"px";
+
+anglem13="rotate("+(m-1+tmove-13)*6+"deg)";
+topPositionm13=(Math.sin(Math.PI*2*(m-1+tmove-13)/60)*230+400)+"px";
+leftPositionm13=(Math.cos(Math.PI*2*(m-1+tmove-13)/60)*230+400)+"px";
+
+anglem14="rotate("+(m-1+tmove-14)*6+"deg)";
+topPositionm14=(Math.sin(Math.PI*2*(m-1+tmove-14)/60)*230+400)+"px";
+leftPositionm14=(Math.cos(Math.PI*2*(m-1+tmove-14)/60)*230+400)+"px";
+
+anglem15="rotate("+(m-1+tmove-15)*6+"deg)";
+topPositionm15=(Math.sin(Math.PI*2*(m-1+tmove-15)/60)*230+400)+"px";
+leftPositionm15=(Math.cos(Math.PI*2*(m-1+tmove-15)/60)*230+400)+"px";
+
+anglem16="rotate("+(m-1+tmove-16)*6+"deg)";
+topPositionm16=(Math.sin(Math.PI*2*(m-1+tmove-16)/60)*230+400)+"px";
+leftPositionm16=(Math.cos(Math.PI*2*(m-1+tmove-16)/60)*230+400)+"px";
+
+anglem17="rotate("+(m-1+tmove-17)*6+"deg)";
+topPositionm17=(Math.sin(Math.PI*2*(m-1+tmove-17)/60)*230+400)+"px";
+leftPositionm17=(Math.cos(Math.PI*2*(m-1+tmove-17)/60)*230+400)+"px";
+
+anglem18="rotate("+(m-1+tmove-18)*6+"deg)";
+topPositionm18=(Math.sin(Math.PI*2*(m-1+tmove-18)/60)*230+400)+"px";
+leftPositionm18=(Math.cos(Math.PI*2*(m-1+tmove-18)/60)*230+400)+"px";
+
+anglem19="rotate("+(m-1+tmove-19)*6+"deg)";
+topPositionm19=(Math.sin(Math.PI*2*(m-1+tmove-19)/60)*230+400)+"px";
+leftPositionm19=(Math.cos(Math.PI*2*(m-1+tmove-19)/60)*230+400)+"px";
+
+anglem20="rotate("+(m-1+tmove-20)*6+"deg)";
+topPositionm20=(Math.sin(Math.PI*2*(m-1+tmove-20)/60)*230+400)+"px";
+leftPositionm20=(Math.cos(Math.PI*2*(m-1+tmove-20)/60)*230+400)+"px";
+
+anglem21="rotate("+(m-1+tmove-21)*6+"deg)";
+topPositionm21=(Math.sin(Math.PI*2*(m-1+tmove-21)/60)*230+400)+"px";
+leftPositionm21=(Math.cos(Math.PI*2*(m-1+tmove-21)/60)*230+400)+"px";
+
+anglem22="rotate("+(m-1+tmove-22)*6+"deg)";
+topPositionm22=(Math.sin(Math.PI*2*(m-1+tmove-22)/60)*230+400)+"px";
+leftPositionm22=(Math.cos(Math.PI*2*(m-1+tmove-22)/60)*230+400)+"px";
+
+anglem23="rotate("+(m-1+tmove-23)*6+"deg)";
+topPositionm23=(Math.sin(Math.PI*2*(m-1+tmove-23)/60)*230+400)+"px";
+leftPositionm23=(Math.cos(Math.PI*2*(m-1+tmove-23)/60)*230+400)+"px";
+
+anglem24="rotate("+(m-1+tmove-24)*6+"deg)";
+topPositionm24=(Math.sin(Math.PI*2*(m-1+tmove-24)/60)*230+400)+"px";
+leftPositionm24=(Math.cos(Math.PI*2*(m-1+tmove-24)/60)*230+400)+"px";
+
+anglem25="rotate("+(m-1+tmove-25)*6+"deg)";
+topPositionm25=(Math.sin(Math.PI*2*(m-1+tmove-25)/60)*230+400)+"px";
+leftPositionm25=(Math.cos(Math.PI*2*(m-1+tmove-25)/60)*230+400)+"px";
+
+anglem26="rotate("+(m-1+tmove-26)*6+"deg)";
+topPositionm26=(Math.sin(Math.PI*2*(m-1+tmove-26)/60)*230+400)+"px";
+leftPositionm26=(Math.cos(Math.PI*2*(m-1+tmove-26)/60)*230+400)+"px";
+
+anglem27="rotate("+(m-1+tmove-27)*6+"deg)";
+topPositionm27=(Math.sin(Math.PI*2*(m-1+tmove-27)/60)*230+400)+"px";
+leftPositionm27=(Math.cos(Math.PI*2*(m-1+tmove-27)/60)*230+400)+"px";
+
+anglem28="rotate("+(m-1+tmove-28)*6+"deg)";
+topPositionm28=(Math.sin(Math.PI*2*(m-1+tmove-28)/60)*230+400)+"px";
+leftPositionm28=(Math.cos(Math.PI*2*(m-1+tmove-28)/60)*230+400)+"px";
+
+anglem29="rotate("+(m-1+tmove-29)*6+"deg)";
+topPositionm29=(Math.sin(Math.PI*2*(m-1+tmove-29)/60)*230+400)+"px";
+leftPositionm29=(Math.cos(Math.PI*2*(m-1+tmove-29)/60)*230+400)+"px";
+
+anglem30="rotate("+(m-1+tmove-30)*6+"deg)";
+topPositionm30=(Math.sin(Math.PI*2*(m-1+tmove-30)/60)*230+400)+"px";
+leftPositionm30=(Math.cos(Math.PI*2*(m-1+tmove-30)/60)*230+400)+"px";
+
+anglem31="rotate("+(m-1+tmove-31)*6+"deg)";
+topPositionm31=(Math.sin(Math.PI*2*(m-1+tmove-31)/60)*230+400)+"px";
+leftPositionm31=(Math.cos(Math.PI*2*(m-1+tmove-31)/60)*230+400)+"px";
+
+anglem32="rotate("+(m-1+tmove-32)*6+"deg)";
+topPositionm32=(Math.sin(Math.PI*2*(m-1+tmove-32)/60)*230+400)+"px";
+leftPositionm32=(Math.cos(Math.PI*2*(m-1+tmove-32)/60)*230+400)+"px";
+
+anglem33="rotate("+(m-1+tmove-33)*6+"deg)";
+topPositionm33=(Math.sin(Math.PI*2*(m-1+tmove-33)/60)*230+400)+"px";
+leftPositionm33=(Math.cos(Math.PI*2*(m-1+tmove-33)/60)*230+400)+"px";
+
+anglem34="rotate("+(m-1+tmove-34)*6+"deg)";
+topPositionm34=(Math.sin(Math.PI*2*(m-1+tmove-34)/60)*230+400)+"px";
+leftPositionm34=(Math.cos(Math.PI*2*(m-1+tmove-34)/60)*230+400)+"px";
+
+anglem35="rotate("+(m-1+tmove-35)*6+"deg)";
+topPositionm35=(Math.sin(Math.PI*2*(m-1+tmove-35)/60)*230+400)+"px";
+leftPositionm35=(Math.cos(Math.PI*2*(m-1+tmove-35)/60)*230+400)+"px";
+
+anglem36="rotate("+(m-1+tmove-36)*6+"deg)";
+topPositionm36=(Math.sin(Math.PI*2*(m-1+tmove-36)/60)*230+400)+"px";
+leftPositionm36=(Math.cos(Math.PI*2*(m-1+tmove-36)/60)*230+400)+"px";
+
+anglem37="rotate("+(m-1+tmove-37)*6+"deg)";
+topPositionm37=(Math.sin(Math.PI*2*(m-1+tmove-37)/60)*230+400)+"px";
+leftPositionm37=(Math.cos(Math.PI*2*(m-1+tmove-37)/60)*230+400)+"px";
+
+anglem38="rotate("+(m-1+tmove-38)*6+"deg)";
+topPositionm38=(Math.sin(Math.PI*2*(m-1+tmove-38)/60)*230+400)+"px";
+leftPositionm38=(Math.cos(Math.PI*2*(m-1+tmove-38)/60)*230+400)+"px";
+
+anglem39="rotate("+(m-1+tmove-39)*6+"deg)";
+topPositionm39=(Math.sin(Math.PI*2*(m-1+tmove-39)/60)*230+400)+"px";
+leftPositionm39=(Math.cos(Math.PI*2*(m-1+tmove-39)/60)*230+400)+"px";
+
+anglem40="rotate("+(m-1+tmove-40)*6+"deg)";
+topPositionm40=(Math.sin(Math.PI*2*(m-1+tmove-40)/60)*230+400)+"px";
+leftPositionm40=(Math.cos(Math.PI*2*(m-1+tmove-40)/60)*230+400)+"px";
+
+anglem41="rotate("+(m-1+tmove-41)*6+"deg)";
+topPositionm41=(Math.sin(Math.PI*2*(m-1+tmove-41)/60)*230+400)+"px";
+leftPositionm41=(Math.cos(Math.PI*2*(m-1+tmove-41)/60)*230+400)+"px";
+
+anglem42="rotate("+(m-1+tmove-42)*6+"deg)";
+topPositionm42=(Math.sin(Math.PI*2*(m-1+tmove-42)/60)*230+400)+"px";
+leftPositionm42=(Math.cos(Math.PI*2*(m-1+tmove-42)/60)*230+400)+"px";
+
+anglem43="rotate("+(m-1+tmove-43)*6+"deg)";
+topPositionm43=(Math.sin(Math.PI*2*(m-1+tmove-43)/60)*230+400)+"px";
+leftPositionm43=(Math.cos(Math.PI*2*(m-1+tmove-43)/60)*230+400)+"px";
+
+anglem44="rotate("+(m-1+tmove-44)*6+"deg)";
+topPositionm44=(Math.sin(Math.PI*2*(m-1+tmove-44)/60)*230+400)+"px";
+leftPositionm44=(Math.cos(Math.PI*2*(m-1+tmove-44)/60)*230+400)+"px";
+
+anglem45="rotate("+(m-1+tmove-45)*6+"deg)";
+topPositionm45=(Math.sin(Math.PI*2*(m-1+tmove-45)/60)*230+400)+"px";
+leftPositionm45=(Math.cos(Math.PI*2*(m-1+tmove-45)/60)*230+400)+"px";
+
+anglem46="rotate("+(m-1+tmove-46)*6+"deg)";
+topPositionm46=(Math.sin(Math.PI*2*(m-1+tmove-46)/60)*230+400)+"px";
+leftPositionm46=(Math.cos(Math.PI*2*(m-1+tmove-46)/60)*230+400)+"px";
+
+anglem47="rotate("+(m-1+tmove-47)*6+"deg)";
+topPositionm47=(Math.sin(Math.PI*2*(m-1+tmove-47)/60)*230+400)+"px";
+leftPositionm47=(Math.cos(Math.PI*2*(m-1+tmove-47)/60)*230+400)+"px";
+
+anglem48="rotate("+(m-1+tmove-48)*6+"deg)";
+topPositionm48=(Math.sin(Math.PI*2*(m-1+tmove-48)/60)*230+400)+"px";
+leftPositionm48=(Math.cos(Math.PI*2*(m-1+tmove-48)/60)*230+400)+"px";
+
+anglem49="rotate("+(m-1+tmove-49)*6+"deg)";
+topPositionm49=(Math.sin(Math.PI*2*(m-1+tmove-49)/60)*230+400)+"px";
+leftPositionm49=(Math.cos(Math.PI*2*(m-1+tmove-49)/60)*230+400)+"px";
+
+anglem50="rotate("+(m-1+tmove-50)*6+"deg)";
+topPositionm50=(Math.sin(Math.PI*2*(m-1+tmove-50)/60)*230+400)+"px";
+leftPositionm50=(Math.cos(Math.PI*2*(m-1+tmove-50)/60)*230+400)+"px";
+
+anglem51="rotate("+(m-1+tmove-51)*6+"deg)";
+topPositionm51=(Math.sin(Math.PI*2*(m-1+tmove-51)/60)*230+400)+"px";
+leftPositionm51=(Math.cos(Math.PI*2*(m-1+tmove-51)/60)*230+400)+"px";
+
+anglem52="rotate("+(m-1+tmove-52)*6+"deg)";
+topPositionm52=(Math.sin(Math.PI*2*(m-1+tmove-52)/60)*230+400)+"px";
+leftPositionm52=(Math.cos(Math.PI*2*(m-1+tmove-52)/60)*230+400)+"px";
+
+anglem53="rotate("+(m-1+tmove-53)*6+"deg)";
+topPositionm53=(Math.sin(Math.PI*2*(m-1+tmove-53)/60)*230+400)+"px";
+leftPositionm53=(Math.cos(Math.PI*2*(m-1+tmove-53)/60)*230+400)+"px";
+
+anglem54="rotate("+(m-1+tmove-54)*6+"deg)";
+topPositionm54=(Math.sin(Math.PI*2*(m-1+tmove-54)/60)*230+400)+"px";
+leftPositionm54=(Math.cos(Math.PI*2*(m-1+tmove-54)/60)*230+400)+"px";
+
+anglem55="rotate("+(m-1+tmove-55)*6+"deg)";
+topPositionm55=(Math.sin(Math.PI*2*(m-1+tmove-55)/60)*230+400)+"px";
+leftPositionm55=(Math.cos(Math.PI*2*(m-1+tmove-55)/60)*230+400)+"px";
+
+anglem56="rotate("+(m-1+tmove-56)*6+"deg)";
+topPositionm56=(Math.sin(Math.PI*2*(m-1+tmove-56)/60)*230+400)+"px";
+leftPositionm56=(Math.cos(Math.PI*2*(m-1+tmove-56)/60)*230+400)+"px";
+
+anglem57="rotate("+(m-1+tmove-57)*6+"deg)";
+topPositionm57=(Math.sin(Math.PI*2*(m-1+tmove-57)/60)*230+400)+"px";
+leftPositionm57=(Math.cos(Math.PI*2*(m-1+tmove-57)/60)*230+400)+"px";
+
+anglem58="rotate("+(m-1+tmove-58)*6+"deg)";
+topPositionm58=(Math.sin(Math.PI*2*(m-1+tmove-58)/60)*230+400)+"px";
+leftPositionm58=(Math.cos(Math.PI*2*(m-1+tmove-58)/60)*230+400)+"px";
+
+anglem59="rotate("+(m-1+tmove-59)*6+"deg)";
+topPositionm59=(Math.sin(Math.PI*2*(m-1+tmove-59)/60)*230+400)+"px";
+leftPositionm59=(Math.cos(Math.PI*2*(m-1+tmove-59)/60)*230+400)+"px";
+
+//
+setStylem('background-color','rgba(0,0,0,0)');
+setStylem('transform',anglem);
+setStylem('top',topPositionm);
+setStylem('left',leftPositionm);
+
+setStylem01('background-color','rgba(0,0,0,0)');
+setStylem01('transform',anglem01);
+setStylem01('top',topPositionm01);
+setStylem01('left',leftPositionm01);
+
+setStylem02('background-color','rgba(0,0,0,0)');
+setStylem02('transform',anglem02);
+setStylem02('top',topPositionm02);
+setStylem02('left',leftPositionm02);
+
+setStylem03('background-color','rgba(0,0,0,0)');
+setStylem03('transform',anglem03);
+setStylem03('top',topPositionm03);
+setStylem03('left',leftPositionm03);
+
+setStylem04('background-color','rgba(0,0,0,0)');
+setStylem04('transform',anglem04);
+setStylem04('top',topPositionm04);
+setStylem04('left',leftPositionm04);
+
+setStylem05('background-color','rgba(0,0,0,0)');
+setStylem05('transform',anglem05);
+setStylem05('top',topPositionm05);
+setStylem05('left',leftPositionm05);
+
+setStylem06('background-color','rgba(0,0,0,0)');
+setStylem06('transform',anglem06);
+setStylem06('top',topPositionm06);
+setStylem06('left',leftPositionm06);
+
+setStylem07('background-color','rgba(0,0,0,0)');
+setStylem07('transform',anglem07);
+setStylem07('top',topPositionm07);
+setStylem07('left',leftPositionm07);
+
+setStylem08('background-color','rgba(0,0,0,0)');
+setStylem08('transform',anglem08);
+setStylem08('top',topPositionm08);
+setStylem08('left',leftPositionm08);
+
+setStylem09('background-color','rgba(0,0,0,0)');
+setStylem09('transform',anglem09);
+setStylem09('top',topPositionm09);
+setStylem09('left',leftPositionm09);
+
+setStylem10('background-color','rgba(0,0,0,0)');
+setStylem10('transform',anglem10);
+setStylem10('top',topPositionm10);
+setStylem10('left',leftPositionm10);
+
+setStylem11('background-color','rgba(0,0,0,0)');
+setStylem11('transform',anglem11);
+setStylem11('top',topPositionm11);
+setStylem11('left',leftPositionm11);
+
+setStylem12('background-color','rgba(0,0,0,0)');
+setStylem12('transform',anglem12);
+setStylem12('top',topPositionm12);
+setStylem12('left',leftPositionm12);
+
+setStylem13('background-color','rgba(0,0,0,0)');
+setStylem13('transform',anglem13);
+setStylem13('top',topPositionm13);
+setStylem13('left',leftPositionm13);
+
+setStylem14('background-color','rgba(0,0,0,0)');
+setStylem14('transform',anglem14);
+setStylem14('top',topPositionm14);
+setStylem14('left',leftPositionm14);
+
+setStylem15('background-color','rgba(0,0,0,0)');
+setStylem15('transform',anglem15);
+setStylem15('top',topPositionm15);
+setStylem15('left',leftPositionm15);
+
+setStylem16('background-color','rgba(0,0,0,0)');
+setStylem16('transform',anglem16);
+setStylem16('top',topPositionm16);
+setStylem16('left',leftPositionm16);
+
+setStylem17('background-color','rgba(0,0,0,0)');
+setStylem17('transform',anglem17);
+setStylem17('top',topPositionm17);
+setStylem17('left',leftPositionm17);
+
+setStylem18('background-color','rgba(0,0,0,0)');
+setStylem18('transform',anglem18);
+setStylem18('top',topPositionm18);
+setStylem18('left',leftPositionm18);
+
+setStylem19('background-color','rgba(0,0,0,0)');
+setStylem19('transform',anglem19);
+setStylem19('top',topPositionm19);
+setStylem19('left',leftPositionm19);
+
+setStylem20('background-color','rgba(0,0,0,0)');
+setStylem20('transform',anglem20);
+setStylem20('top',topPositionm20);
+setStylem20('left',leftPositionm20);
+
+setStylem21('background-color','rgba(0,0,0,0)');
+setStylem21('transform',anglem21);
+setStylem21('top',topPositionm21);
+setStylem21('left',leftPositionm21);
+
+setStylem22('background-color','rgba(0,0,0,0)');
+setStylem22('transform',anglem22);
+setStylem22('top',topPositionm22);
+setStylem22('left',leftPositionm22);
+
+setStylem23('background-color','rgba(0,0,0,0)');
+setStylem23('transform',anglem23);
+setStylem23('top',topPositionm23);
+setStylem23('left',leftPositionm23);
+
+setStylem24('background-color','rgba(0,0,0,0)');
+setStylem24('transform',anglem24);
+setStylem24('top',topPositionm24);
+setStylem24('left',leftPositionm24);
+
+setStylem25('background-color','rgba(0,0,0,0)');
+setStylem25('transform',anglem25);
+setStylem25('top',topPositionm25);
+setStylem25('left',leftPositionm25);
+
+setStylem26('background-color','rgba(0,0,0,0)');
+setStylem26('transform',anglem26);
+setStylem26('top',topPositionm26);
+setStylem26('left',leftPositionm26);
+
+setStylem27('background-color','rgba(0,0,0,0)');
+setStylem27('transform',anglem27);
+setStylem27('top',topPositionm27);
+setStylem27('left',leftPositionm27);
+
+setStylem28('background-color','rgba(0,0,0,0)');
+setStylem28('transform',anglem28);
+setStylem28('top',topPositionm28);
+setStylem28('left',leftPositionm28);
+
+setStylem29('background-color','rgba(0,0,0,0)');
+setStylem29('transform',anglem29);
+setStylem29('top',topPositionm29);
+setStylem29('left',leftPositionm29);
+
+setStylem30('background-color','rgba(0,0,0,0)');
+setStylem30('transform',anglem30);
+setStylem30('top',topPositionm30);
+setStylem30('left',leftPositionm30);
+
+setStylem31('background-color','rgba(0,0,0,0)');
+setStylem31('transform',anglem31);
+setStylem31('top',topPositionm31);
+setStylem31('left',leftPositionm31);
+
+setStylem32('background-color','rgba(0,0,0,0)');
+setStylem32('transform',anglem32);
+setStylem32('top',topPositionm32);
+setStylem32('left',leftPositionm32);
+
+setStylem33('background-color','rgba(0,0,0,0)');
+setStylem33('transform',anglem33);
+setStylem33('top',topPositionm33);
+setStylem33('left',leftPositionm33);
+
+setStylem34('background-color','rgba(0,0,0,0)');
+setStylem34('transform',anglem34);
+setStylem34('top',topPositionm34);
+setStylem34('left',leftPositionm34);
+
+setStylem35('background-color','rgba(0,0,0,0)');
+setStylem35('transform',anglem35);
+setStylem35('top',topPositionm35);
+setStylem35('left',leftPositionm35);
+
+setStylem36('background-color','rgba(0,0,0,0)');
+setStylem36('transform',anglem36);
+setStylem36('top',topPositionm36);
+setStylem36('left',leftPositionm36);
+
+setStylem37('background-color','rgba(0,0,0,0)');
+setStylem37('transform',anglem37);
+setStylem37('top',topPositionm37);
+setStylem37('left',leftPositionm37);
+
+setStylem38('background-color','rgba(0,0,0,0)');
+setStylem38('transform',anglem38);
+setStylem38('top',topPositionm38);
+setStylem38('left',leftPositionm38);
+
+setStylem39('background-color','rgba(0,0,0,0)');
+setStylem39('transform',anglem39);
+setStylem39('top',topPositionm39);
+setStylem39('left',leftPositionm39);
+
+setStylem40('background-color','rgba(0,0,0,0)');
+setStylem40('transform',anglem40);
+setStylem40('top',topPositionm40);
+setStylem40('left',leftPositionm40);
+
+setStylem41('background-color','rgba(0,0,0,0)');
+setStylem41('transform',anglem41);
+setStylem41('top',topPositionm41);
+setStylem41('left',leftPositionm41);
+
+setStylem42('background-color','rgba(0,0,0,0)');
+setStylem42('transform',anglem42);
+setStylem42('top',topPositionm42);
+setStylem42('left',leftPositionm42);
+
+setStylem43('background-color','rgba(0,0,0,0)');
+setStylem43('transform',anglem43);
+setStylem43('top',topPositionm43);
+setStylem43('left',leftPositionm43);
+
+setStylem44('background-color','rgba(0,0,0,0)');
+setStylem44('transform',anglem44);
+setStylem44('top',topPositionm44);
+setStylem44('left',leftPositionm44);
+
+setStylem45('background-color','rgba(0,0,0,0)');
+setStylem45('transform',anglem45);
+setStylem45('top',topPositionm45);
+setStylem45('left',leftPositionm45);
+
+setStylem46('background-color','rgba(0,0,0,0)');
+setStylem46('transform',anglem46);
+setStylem46('top',topPositionm46);
+setStylem46('left',leftPositionm46);
+
+setStylem47('background-color','rgba(0,0,0,0)');
+setStylem47('transform',anglem47);
+setStylem47('top',topPositionm47);
+setStylem47('left',leftPositionm47);
+
+setStylem48('background-color','rgba(0,0,0,0)');
+setStylem48('transform',anglem48);
+setStylem48('top',topPositionm48);
+setStylem48('left',leftPositionm48);
+
+setStylem49('background-color','rgba(0,0,0,0)');
+setStylem49('transform',anglem49);
+setStylem49('top',topPositionm49);
+setStylem49('left',leftPositionm49);
+
+setStylem50('background-color','rgba(0,0,0,0)');
+setStylem50('transform',anglem50);
+setStylem50('top',topPositionm50);
+setStylem50('left',leftPositionm50);
+
+setStylem51('background-color','rgba(0,0,0,0)');
+setStylem51('transform',anglem51);
+setStylem51('top',topPositionm51);
+setStylem51('left',leftPositionm51);
+
+setStylem52('background-color','rgba(0,0,0,0)');
+setStylem52('transform',anglem52);
+setStylem52('top',topPositionm52);
+setStylem52('left',leftPositionm52);
+
+setStylem53('background-color','rgba(0,0,0,0)');
+setStylem53('transform',anglem53);
+setStylem53('top',topPositionm53);
+setStylem53('left',leftPositionm53);
+
+setStylem54('background-color','rgba(0,0,0,0)');
+setStylem54('transform',anglem54);
+setStylem54('top',topPositionm54);
+setStylem54('left',leftPositionm54);
+
+setStylem55('background-color','rgba(0,0,0,0)');
+setStylem55('transform',anglem55);
+setStylem55('top',topPositionm55);
+setStylem55('left',leftPositionm55);
+
+setStylem56('background-color','rgba(0,0,0,0)');
+setStylem56('transform',anglem56);
+setStylem56('top',topPositionm56);
+setStylem56('left',leftPositionm56);
+
+setStylem57('background-color','rgba(0,0,0,0)');
+setStylem57('transform',anglem57);
+setStylem57('top',topPositionm57);
+setStylem57('left',leftPositionm57);
+
+setStylem58('background-color','rgba(0,0,0,0)');
+setStylem58('transform',anglem58);
+setStylem58('top',topPositionm58);
+setStylem58('left',leftPositionm58);
+
+setStylem59('background-color','rgba(0,0,0,0)');
+setStylem59('transform',anglem59);
+setStylem59('top',topPositionm59);
+setStylem59('left',leftPositionm59);
+}
+
+if(stemp != s)
+{
+
+if(tmove >= 1)
+{
+stemp=s;
+}
+
+angle="rotate("+(s-1+tmove)*6+"deg)";
+topPosition=(Math.sin(Math.PI*2*(s-1+tmove)/60)*260+400)+"px";
+leftPosition=(Math.cos(Math.PI*2*(s-1+tmove)/60)*260+400)+"px";
+
+angle01="rotate("+(s-1+tmove-1)*6+"deg)";
+topPosition01=(Math.sin(Math.PI*2*(s-1+tmove-1)/60)*260+400)+"px";
+leftPosition01=(Math.cos(Math.PI*2*(s-1+tmove-1)/60)*260+400)+"px";
+
+angle02="rotate("+(s-1+tmove-2)*6+"deg)";
+topPosition02=(Math.sin(Math.PI*2*(s-1+tmove-2)/60)*260+400)+"px";
+leftPosition02=(Math.cos(Math.PI*2*(s-1+tmove-2)/60)*260+400)+"px";
+
+angle03="rotate("+(s-1+tmove-3)*6+"deg)";
+topPosition03=(Math.sin(Math.PI*2*(s-1+tmove-3)/60)*260+400)+"px";
+leftPosition03=(Math.cos(Math.PI*2*(s-1+tmove-3)/60)*260+400)+"px";
+
+angle04="rotate("+(s-1+tmove-4)*6+"deg)";
+topPosition04=(Math.sin(Math.PI*2*(s-1+tmove-4)/60)*260+400)+"px";
+leftPosition04=(Math.cos(Math.PI*2*(s-1+tmove-4)/60)*260+400)+"px";
+
+angle05="rotate("+(s-1+tmove-5)*6+"deg)";
+topPosition05=(Math.sin(Math.PI*2*(s-1+tmove-5)/60)*260+400)+"px";
+leftPosition05=(Math.cos(Math.PI*2*(s-1+tmove-5)/60)*260+400)+"px";
+
+angle06="rotate("+(s-1+tmove-6)*6+"deg)";
+topPosition06=(Math.sin(Math.PI*2*(s-1+tmove-6)/60)*260+400)+"px";
+leftPosition06=(Math.cos(Math.PI*2*(s-1+tmove-6)/60)*260+400)+"px";
+
+angle07="rotate("+(s-1+tmove-7)*6+"deg)";
+topPosition07=(Math.sin(Math.PI*2*(s-1+tmove-7)/60)*260+400)+"px";
+leftPosition07=(Math.cos(Math.PI*2*(s-1+tmove-7)/60)*260+400)+"px";
+
+angle08="rotate("+(s-1+tmove-8)*6+"deg)";
+topPosition08=(Math.sin(Math.PI*2*(s-1+tmove-8)/60)*260+400)+"px";
+leftPosition08=(Math.cos(Math.PI*2*(s-1+tmove-8)/60)*260+400)+"px";
+
+angle09="rotate("+(s-1+tmove-9)*6+"deg)";
+topPosition09=(Math.sin(Math.PI*2*(s-1+tmove-9)/60)*260+400)+"px";
+leftPosition09=(Math.cos(Math.PI*2*(s-1+tmove-9)/60)*260+400)+"px";
+
+angle10="rotate("+(s-1+tmove-10)*6+"deg)";
+topPosition10=(Math.sin(Math.PI*2*(s-1+tmove-10)/60)*260+400)+"px";
+leftPosition10=(Math.cos(Math.PI*2*(s-1+tmove-10)/60)*260+400)+"px";
+
+angle11="rotate("+(s-1+tmove-11)*6+"deg)";
+topPosition11=(Math.sin(Math.PI*2*(s-1+tmove-11)/60)*260+400)+"px";
+leftPosition11=(Math.cos(Math.PI*2*(s-1+tmove-11)/60)*260+400)+"px";
+
+angle12="rotate("+(s-1+tmove-12)*6+"deg)";
+topPosition12=(Math.sin(Math.PI*2*(s-1+tmove-12)/60)*260+400)+"px";
+leftPosition12=(Math.cos(Math.PI*2*(s-1+tmove-12)/60)*260+400)+"px";
+
+angle13="rotate("+(s-1+tmove-13)*6+"deg)";
+topPosition13=(Math.sin(Math.PI*2*(s-1+tmove-13)/60)*260+400)+"px";
+leftPosition13=(Math.cos(Math.PI*2*(s-1+tmove-13)/60)*260+400)+"px";
+
+angle14="rotate("+(s-1+tmove-14)*6+"deg)";
+topPosition14=(Math.sin(Math.PI*2*(s-1+tmove-14)/60)*260+400)+"px";
+leftPosition14=(Math.cos(Math.PI*2*(s-1+tmove-14)/60)*260+400)+"px";
+
+angle15="rotate("+(s-1+tmove-15)*6+"deg)";
+topPosition15=(Math.sin(Math.PI*2*(s-1+tmove-15)/60)*260+400)+"px";
+leftPosition15=(Math.cos(Math.PI*2*(s-1+tmove-15)/60)*260+400)+"px";
+
+angle16="rotate("+(s-1+tmove-16)*6+"deg)";
+topPosition16=(Math.sin(Math.PI*2*(s-1+tmove-16)/60)*260+400)+"px";
+leftPosition16=(Math.cos(Math.PI*2*(s-1+tmove-16)/60)*260+400)+"px";
+
+angle17="rotate("+(s-1+tmove-17)*6+"deg)";
+topPosition17=(Math.sin(Math.PI*2*(s-1+tmove-17)/60)*260+400)+"px";
+leftPosition17=(Math.cos(Math.PI*2*(s-1+tmove-17)/60)*260+400)+"px";
+
+angle18="rotate("+(s-1+tmove-18)*6+"deg)";
+topPosition18=(Math.sin(Math.PI*2*(s-1+tmove-18)/60)*260+400)+"px";
+leftPosition18=(Math.cos(Math.PI*2*(s-1+tmove-18)/60)*260+400)+"px";
+
+angle19="rotate("+(s-1+tmove-19)*6+"deg)";
+topPosition19=(Math.sin(Math.PI*2*(s-1+tmove-19)/60)*260+400)+"px";
+leftPosition19=(Math.cos(Math.PI*2*(s-1+tmove-19)/60)*260+400)+"px";
+
+angle20="rotate("+(s-1+tmove-20)*6+"deg)";
+topPosition20=(Math.sin(Math.PI*2*(s-1+tmove-20)/60)*260+400)+"px";
+leftPosition20=(Math.cos(Math.PI*2*(s-1+tmove-20)/60)*260+400)+"px";
+
+angle21="rotate("+(s-1+tmove-21)*6+"deg)";
+topPosition21=(Math.sin(Math.PI*2*(s-1+tmove-21)/60)*260+400)+"px";
+leftPosition21=(Math.cos(Math.PI*2*(s-1+tmove-21)/60)*260+400)+"px";
+
+angle22="rotate("+(s-1+tmove-22)*6+"deg)";
+topPosition22=(Math.sin(Math.PI*2*(s-1+tmove-22)/60)*260+400)+"px";
+leftPosition22=(Math.cos(Math.PI*2*(s-1+tmove-22)/60)*260+400)+"px";
+
+angle23="rotate("+(s-1+tmove-23)*6+"deg)";
+topPosition23=(Math.sin(Math.PI*2*(s-1+tmove-23)/60)*260+400)+"px";
+leftPosition23=(Math.cos(Math.PI*2*(s-1+tmove-23)/60)*260+400)+"px";
+
+angle24="rotate("+(s-1+tmove-24)*6+"deg)";
+topPosition24=(Math.sin(Math.PI*2*(s-1+tmove-24)/60)*260+400)+"px";
+leftPosition24=(Math.cos(Math.PI*2*(s-1+tmove-24)/60)*260+400)+"px";
+
+angle25="rotate("+(s-1+tmove-25)*6+"deg)";
+topPosition25=(Math.sin(Math.PI*2*(s-1+tmove-25)/60)*260+400)+"px";
+leftPosition25=(Math.cos(Math.PI*2*(s-1+tmove-25)/60)*260+400)+"px";
+
+angle26="rotate("+(s-1+tmove-26)*6+"deg)";
+topPosition26=(Math.sin(Math.PI*2*(s-1+tmove-26)/60)*260+400)+"px";
+leftPosition26=(Math.cos(Math.PI*2*(s-1+tmove-26)/60)*260+400)+"px";
+
+angle27="rotate("+(s-1+tmove-27)*6+"deg)";
+topPosition27=(Math.sin(Math.PI*2*(s-1+tmove-27)/60)*260+400)+"px";
+leftPosition27=(Math.cos(Math.PI*2*(s-1+tmove-27)/60)*260+400)+"px";
+
+angle28="rotate("+(s-1+tmove-28)*6+"deg)";
+topPosition28=(Math.sin(Math.PI*2*(s-1+tmove-28)/60)*260+400)+"px";
+leftPosition28=(Math.cos(Math.PI*2*(s-1+tmove-28)/60)*260+400)+"px";
+
+angle29="rotate("+(s-1+tmove-29)*6+"deg)";
+topPosition29=(Math.sin(Math.PI*2*(s-1+tmove-29)/60)*260+400)+"px";
+leftPosition29=(Math.cos(Math.PI*2*(s-1+tmove-29)/60)*260+400)+"px";
+
+angle30="rotate("+(s-1+tmove-30)*6+"deg)";
+topPosition30=(Math.sin(Math.PI*2*(s-1+tmove-30)/60)*260+400)+"px";
+leftPosition30=(Math.cos(Math.PI*2*(s-1+tmove-30)/60)*260+400)+"px";
+
+angle31="rotate("+(s-1+tmove-31)*6+"deg)";
+topPosition31=(Math.sin(Math.PI*2*(s-1+tmove-31)/60)*260+400)+"px";
+leftPosition31=(Math.cos(Math.PI*2*(s-1+tmove-31)/60)*260+400)+"px";
+
+angle32="rotate("+(s-1+tmove-32)*6+"deg)";
+topPosition32=(Math.sin(Math.PI*2*(s-1+tmove-32)/60)*260+400)+"px";
+leftPosition32=(Math.cos(Math.PI*2*(s-1+tmove-32)/60)*260+400)+"px";
+
+angle33="rotate("+(s-1+tmove-33)*6+"deg)";
+topPosition33=(Math.sin(Math.PI*2*(s-1+tmove-33)/60)*260+400)+"px";
+leftPosition33=(Math.cos(Math.PI*2*(s-1+tmove-33)/60)*260+400)+"px";
+
+angle34="rotate("+(s-1+tmove-34)*6+"deg)";
+topPosition34=(Math.sin(Math.PI*2*(s-1+tmove-34)/60)*260+400)+"px";
+leftPosition34=(Math.cos(Math.PI*2*(s-1+tmove-34)/60)*260+400)+"px";
+
+angle35="rotate("+(s-1+tmove-35)*6+"deg)";
+topPosition35=(Math.sin(Math.PI*2*(s-1+tmove-35)/60)*260+400)+"px";
+leftPosition35=(Math.cos(Math.PI*2*(s-1+tmove-35)/60)*260+400)+"px";
+
+angle36="rotate("+(s-1+tmove-36)*6+"deg)";
+topPosition36=(Math.sin(Math.PI*2*(s-1+tmove-36)/60)*260+400)+"px";
+leftPosition36=(Math.cos(Math.PI*2*(s-1+tmove-36)/60)*260+400)+"px";
+
+angle37="rotate("+(s-1+tmove-37)*6+"deg)";
+topPosition37=(Math.sin(Math.PI*2*(s-1+tmove-37)/60)*260+400)+"px";
+leftPosition37=(Math.cos(Math.PI*2*(s-1+tmove-37)/60)*260+400)+"px";
+
+angle38="rotate("+(s-1+tmove-38)*6+"deg)";
+topPosition38=(Math.sin(Math.PI*2*(s-1+tmove-38)/60)*260+400)+"px";
+leftPosition38=(Math.cos(Math.PI*2*(s-1+tmove-38)/60)*260+400)+"px";
+
+angle39="rotate("+(s-1+tmove-39)*6+"deg)";
+topPosition39=(Math.sin(Math.PI*2*(s-1+tmove-39)/60)*260+400)+"px";
+leftPosition39=(Math.cos(Math.PI*2*(s-1+tmove-39)/60)*260+400)+"px";
+
+angle40="rotate("+(s-1+tmove-40)*6+"deg)";
+topPosition40=(Math.sin(Math.PI*2*(s-1+tmove-40)/60)*260+400)+"px";
+leftPosition40=(Math.cos(Math.PI*2*(s-1+tmove-40)/60)*260+400)+"px";
+
+angle41="rotate("+(s-1+tmove-41)*6+"deg)";
+topPosition41=(Math.sin(Math.PI*2*(s-1+tmove-41)/60)*260+400)+"px";
+leftPosition41=(Math.cos(Math.PI*2*(s-1+tmove-41)/60)*260+400)+"px";
+
+angle42="rotate("+(s-1+tmove-42)*6+"deg)";
+topPosition42=(Math.sin(Math.PI*2*(s-1+tmove-42)/60)*260+400)+"px";
+leftPosition42=(Math.cos(Math.PI*2*(s-1+tmove-42)/60)*260+400)+"px";
+
+angle43="rotate("+(s-1+tmove-43)*6+"deg)";
+topPosition43=(Math.sin(Math.PI*2*(s-1+tmove-43)/60)*260+400)+"px";
+leftPosition43=(Math.cos(Math.PI*2*(s-1+tmove-43)/60)*260+400)+"px";
+
+angle44="rotate("+(s-1+tmove-44)*6+"deg)";
+topPosition44=(Math.sin(Math.PI*2*(s-1+tmove-44)/60)*260+400)+"px";
+leftPosition44=(Math.cos(Math.PI*2*(s-1+tmove-44)/60)*260+400)+"px";
+
+angle45="rotate("+(s-1+tmove-45)*6+"deg)";
+topPosition45=(Math.sin(Math.PI*2*(s-1+tmove-45)/60)*260+400)+"px";
+leftPosition45=(Math.cos(Math.PI*2*(s-1+tmove-45)/60)*260+400)+"px";
+
+angle46="rotate("+(s-1+tmove-46)*6+"deg)";
+topPosition46=(Math.sin(Math.PI*2*(s-1+tmove-46)/60)*260+400)+"px";
+leftPosition46=(Math.cos(Math.PI*2*(s-1+tmove-46)/60)*260+400)+"px";
+
+angle47="rotate("+(s-1+tmove-47)*6+"deg)";
+topPosition47=(Math.sin(Math.PI*2*(s-1+tmove-47)/60)*260+400)+"px";
+leftPosition47=(Math.cos(Math.PI*2*(s-1+tmove-47)/60)*260+400)+"px";
+
+angle48="rotate("+(s-1+tmove-48)*6+"deg)";
+topPosition48=(Math.sin(Math.PI*2*(s-1+tmove-48)/60)*260+400)+"px";
+leftPosition48=(Math.cos(Math.PI*2*(s-1+tmove-48)/60)*260+400)+"px";
+
+angle49="rotate("+(s-1+tmove-49)*6+"deg)";
+topPosition49=(Math.sin(Math.PI*2*(s-1+tmove-49)/60)*260+400)+"px";
+leftPosition49=(Math.cos(Math.PI*2*(s-1+tmove-49)/60)*260+400)+"px";
+
+angle50="rotate("+(s-1+tmove-50)*6+"deg)";
+topPosition50=(Math.sin(Math.PI*2*(s-1+tmove-50)/60)*260+400)+"px";
+leftPosition50=(Math.cos(Math.PI*2*(s-1+tmove-50)/60)*260+400)+"px";
+
+angle51="rotate("+(s-1+tmove-51)*6+"deg)";
+topPosition51=(Math.sin(Math.PI*2*(s-1+tmove-51)/60)*260+400)+"px";
+leftPosition51=(Math.cos(Math.PI*2*(s-1+tmove-51)/60)*260+400)+"px";
+
+angle52="rotate("+(s-1+tmove-52)*6+"deg)";
+topPosition52=(Math.sin(Math.PI*2*(s-1+tmove-52)/60)*260+400)+"px";
+leftPosition52=(Math.cos(Math.PI*2*(s-1+tmove-52)/60)*260+400)+"px";
+
+angle53="rotate("+(s-1+tmove-53)*6+"deg)";
+topPosition53=(Math.sin(Math.PI*2*(s-1+tmove-53)/60)*260+400)+"px";
+leftPosition53=(Math.cos(Math.PI*2*(s-1+tmove-53)/60)*260+400)+"px";
+
+angle54="rotate("+(s-1+tmove-54)*6+"deg)";
+topPosition54=(Math.sin(Math.PI*2*(s-1+tmove-54)/60)*260+400)+"px";
+leftPosition54=(Math.cos(Math.PI*2*(s-1+tmove-54)/60)*260+400)+"px";
+
+angle55="rotate("+(s-1+tmove-55)*6+"deg)";
+topPosition55=(Math.sin(Math.PI*2*(s-1+tmove-55)/60)*260+400)+"px";
+leftPosition55=(Math.cos(Math.PI*2*(s-1+tmove-55)/60)*260+400)+"px";
+
+angle56="rotate("+(s-1+tmove-56)*6+"deg)";
+topPosition56=(Math.sin(Math.PI*2*(s-1+tmove-56)/60)*260+400)+"px";
+leftPosition56=(Math.cos(Math.PI*2*(s-1+tmove-56)/60)*260+400)+"px";
+
+angle57="rotate("+(s-1+tmove-57)*6+"deg)";
+topPosition57=(Math.sin(Math.PI*2*(s-1+tmove-57)/60)*260+400)+"px";
+leftPosition57=(Math.cos(Math.PI*2*(s-1+tmove-57)/60)*260+400)+"px";
+
+angle58="rotate("+(s-1+tmove-58)*6+"deg)";
+topPosition58=(Math.sin(Math.PI*2*(s-1+tmove-58)/60)*260+400)+"px";
+leftPosition58=(Math.cos(Math.PI*2*(s-1+tmove-58)/60)*260+400)+"px";
+
+angle59="rotate("+(s-1+tmove-59)*6+"deg)";
+topPosition59=(Math.sin(Math.PI*2*(s-1+tmove-59)/60)*260+400)+"px";
+leftPosition59=(Math.cos(Math.PI*2*(s-1+tmove-59)/60)*260+400)+"px";
+
+// add a zero in front of numbers<10;
+h=checkTime(h);
+m=checkTime(m);
+s=checkTime(s);
+
+setStyle('background-color','rgba(0,0,0,0)');
+setStyle('transform',angle);
+setStyle('top',topPosition);
+setStyle('left',leftPosition);
+
+setStyle01('background-color','rgba(0,0,0,0)');
+setStyle01('transform',angle01);
+setStyle01('top',topPosition01);
+setStyle01('left',leftPosition01);
+
+setStyle02('background-color','rgba(0,0,0,0)');
+setStyle02('transform',angle02);
+setStyle02('top',topPosition02);
+setStyle02('left',leftPosition02);
+
+setStyle03('background-color','rgba(0,0,0,0)');
+setStyle03('transform',angle03);
+setStyle03('top',topPosition03);
+setStyle03('left',leftPosition03);
+
+setStyle04('background-color','rgba(0,0,0,0)');
+setStyle04('transform',angle04);
+setStyle04('top',topPosition04);
+setStyle04('left',leftPosition04);
+
+setStyle05('background-color','rgba(0,0,0,0)');
+setStyle05('transform',angle05);
+setStyle05('top',topPosition05);
+setStyle05('left',leftPosition05);
+
+setStyle06('background-color','rgba(0,0,0,0)');
+setStyle06('transform',angle06);
+setStyle06('top',topPosition06);
+setStyle06('left',leftPosition06);
+
+setStyle07('background-color','rgba(0,0,0,0)');
+setStyle07('transform',angle07);
+setStyle07('top',topPosition07);
+setStyle07('left',leftPosition07);
+
+setStyle08('background-color','rgba(0,0,0,0)');
+setStyle08('transform',angle08);
+setStyle08('top',topPosition08);
+setStyle08('left',leftPosition08);
+
+setStyle09('background-color','rgba(0,0,0,0)');
+setStyle09('transform',angle09);
+setStyle09('top',topPosition09);
+setStyle09('left',leftPosition09);
+
+setStyle10('background-color','rgba(0,0,0,0)');
+setStyle10('transform',angle10);
+setStyle10('top',topPosition10);
+setStyle10('left',leftPosition10);
+
+setStyle11('background-color','rgba(0,0,0,0)');
+setStyle11('transform',angle11);
+setStyle11('top',topPosition11);
+setStyle11('left',leftPosition11);
+
+setStyle12('background-color','rgba(0,0,0,0)');
+setStyle12('transform',angle12);
+setStyle12('top',topPosition12);
+setStyle12('left',leftPosition12);
+
+setStyle13('background-color','rgba(0,0,0,0)');
+setStyle13('transform',angle13);
+setStyle13('top',topPosition13);
+setStyle13('left',leftPosition13);
+
+setStyle14('background-color','rgba(0,0,0,0)');
+setStyle14('transform',angle14);
+setStyle14('top',topPosition14);
+setStyle14('left',leftPosition14);
+
+setStyle15('background-color','rgba(0,0,0,0)');
+setStyle15('transform',angle15);
+setStyle15('top',topPosition15);
+setStyle15('left',leftPosition15);
+
+setStyle16('background-color','rgba(0,0,0,0)');
+setStyle16('transform',angle16);
+setStyle16('top',topPosition16);
+setStyle16('left',leftPosition16);
+
+setStyle17('background-color','rgba(0,0,0,0)');
+setStyle17('transform',angle17);
+setStyle17('top',topPosition17);
+setStyle17('left',leftPosition17);
+
+setStyle18('background-color','rgba(0,0,0,0)');
+setStyle18('transform',angle18);
+setStyle18('top',topPosition18);
+setStyle18('left',leftPosition18);
+
+setStyle19('background-color','rgba(0,0,0,0)');
+setStyle19('transform',angle19);
+setStyle19('top',topPosition19);
+setStyle19('left',leftPosition19);
+
+setStyle20('background-color','rgba(0,0,0,0)');
+setStyle20('transform',angle20);
+setStyle20('top',topPosition20);
+setStyle20('left',leftPosition20);
+
+setStyle21('background-color','rgba(0,0,0,0)');
+setStyle21('transform',angle21);
+setStyle21('top',topPosition21);
+setStyle21('left',leftPosition21);
+
+setStyle22('background-color','rgba(0,0,0,0)');
+setStyle22('transform',angle22);
+setStyle22('top',topPosition22);
+setStyle22('left',leftPosition22);
+
+setStyle23('background-color','rgba(0,0,0,0)');
+setStyle23('transform',angle23);
+setStyle23('top',topPosition23);
+setStyle23('left',leftPosition23);
+
+setStyle24('background-color','rgba(0,0,0,0)');
+setStyle24('transform',angle24);
+setStyle24('top',topPosition24);
+setStyle24('left',leftPosition24);
+
+setStyle25('background-color','rgba(0,0,0,0)');
+setStyle25('transform',angle25);
+setStyle25('top',topPosition25);
+setStyle25('left',leftPosition25);
+
+setStyle26('background-color','rgba(0,0,0,0)');
+setStyle26('transform',angle26);
+setStyle26('top',topPosition26);
+setStyle26('left',leftPosition26);
+
+setStyle27('background-color','rgba(0,0,0,0)');
+setStyle27('transform',angle27);
+setStyle27('top',topPosition27);
+setStyle27('left',leftPosition27);
+
+setStyle28('background-color','rgba(0,0,0,0)');
+setStyle28('transform',angle28);
+setStyle28('top',topPosition28);
+setStyle28('left',leftPosition28);
+
+setStyle29('background-color','rgba(0,0,0,0)');
+setStyle29('transform',angle29);
+setStyle29('top',topPosition29);
+setStyle29('left',leftPosition29);
+
+setStyle30('background-color','rgba(0,0,0,0)');
+setStyle30('transform',angle30);
+setStyle30('top',topPosition30);
+setStyle30('left',leftPosition30);
+
+setStyle31('background-color','rgba(0,0,0,0)');
+setStyle31('transform',angle31);
+setStyle31('top',topPosition31);
+setStyle31('left',leftPosition31);
+
+setStyle32('background-color','rgba(0,0,0,0)');
+setStyle32('transform',angle32);
+setStyle32('top',topPosition32);
+setStyle32('left',leftPosition32);
+
+setStyle33('background-color','rgba(0,0,0,0)');
+setStyle33('transform',angle33);
+setStyle33('top',topPosition33);
+setStyle33('left',leftPosition33);
+
+setStyle34('background-color','rgba(0,0,0,0)');
+setStyle34('transform',angle34);
+setStyle34('top',topPosition34);
+setStyle34('left',leftPosition34);
+
+setStyle35('background-color','rgba(0,0,0,0)');
+setStyle35('transform',angle35);
+setStyle35('top',topPosition35);
+setStyle35('left',leftPosition35);
+
+setStyle36('background-color','rgba(0,0,0,0)');
+setStyle36('transform',angle36);
+setStyle36('top',topPosition36);
+setStyle36('left',leftPosition36);
+
+setStyle37('background-color','rgba(0,0,0,0)');
+setStyle37('transform',angle37);
+setStyle37('top',topPosition37);
+setStyle37('left',leftPosition37);
+
+setStyle38('background-color','rgba(0,0,0,0)');
+setStyle38('transform',angle38);
+setStyle38('top',topPosition38);
+setStyle38('left',leftPosition38);
+
+setStyle39('background-color','rgba(0,0,0,0)');
+setStyle39('transform',angle39);
+setStyle39('top',topPosition39);
+setStyle39('left',leftPosition39);
+
+setStyle40('background-color','rgba(0,0,0,0)');
+setStyle40('transform',angle40);
+setStyle40('top',topPosition40);
+setStyle40('left',leftPosition40);
+
+setStyle41('background-color','rgba(0,0,0,0)');
+setStyle41('transform',angle41);
+setStyle41('top',topPosition41);
+setStyle41('left',leftPosition41);
+
+setStyle42('background-color','rgba(0,0,0,0)');
+setStyle42('transform',angle42);
+setStyle42('top',topPosition42);
+setStyle42('left',leftPosition42);
+
+setStyle43('background-color','rgba(0,0,0,0)');
+setStyle43('transform',angle43);
+setStyle43('top',topPosition43);
+setStyle43('left',leftPosition43);
+
+setStyle44('background-color','rgba(0,0,0,0)');
+setStyle44('transform',angle44);
+setStyle44('top',topPosition44);
+setStyle44('left',leftPosition44);
+
+setStyle45('background-color','rgba(0,0,0,0)');
+setStyle45('transform',angle45);
+setStyle45('top',topPosition45);
+setStyle45('left',leftPosition45);
+
+setStyle46('background-color','rgba(0,0,0,0)');
+setStyle46('transform',angle46);
+setStyle46('top',topPosition46);
+setStyle46('left',leftPosition46);
+
+setStyle47('background-color','rgba(0,0,0,0)');
+setStyle47('transform',angle47);
+setStyle47('top',topPosition47);
+setStyle47('left',leftPosition47);
+
+setStyle48('background-color','rgba(0,0,0,0)');
+setStyle48('transform',angle48);
+setStyle48('top',topPosition48);
+setStyle48('left',leftPosition48);
+
+setStyle49('background-color','rgba(0,0,0,0)');
+setStyle49('transform',angle49);
+setStyle49('top',topPosition49);
+setStyle49('left',leftPosition49);
+
+setStyle50('background-color','rgba(0,0,0,0)');
+setStyle50('transform',angle50);
+setStyle50('top',topPosition50);
+setStyle50('left',leftPosition50);
+
+setStyle51('background-color','rgba(0,0,0,0)');
+setStyle51('transform',angle51);
+setStyle51('top',topPosition51);
+setStyle51('left',leftPosition51);
+
+setStyle52('background-color','rgba(0,0,0,0)');
+setStyle52('transform',angle52);
+setStyle52('top',topPosition52);
+setStyle52('left',leftPosition52);
+
+setStyle53('background-color','rgba(0,0,0,0)');
+setStyle53('transform',angle53);
+setStyle53('top',topPosition53);
+setStyle53('left',leftPosition53);
+
+setStyle54('background-color','rgba(0,0,0,0)');
+setStyle54('transform',angle54);
+setStyle54('top',topPosition54);
+setStyle54('left',leftPosition54);
+
+setStyle55('background-color','rgba(0,0,0,0)');
+setStyle55('transform',angle55);
+setStyle55('top',topPosition55);
+setStyle55('left',leftPosition55);
+
+setStyle56('background-color','rgba(0,0,0,0)');
+setStyle56('transform',angle56);
+setStyle56('top',topPosition56);
+setStyle56('left',leftPosition56);
+
+setStyle57('background-color','rgba(0,0,0,0)');
+setStyle57('transform',angle57);
+setStyle57('top',topPosition57);
+setStyle57('left',leftPosition57);
+
+setStyle58('background-color','rgba(0,0,0,0)');
+setStyle58('transform',angle58);
+setStyle58('top',topPosition58);
+setStyle58('left',leftPosition58);
+
+setStyle59('background-color','rgba(0,0,0,0)');
+setStyle59('transform',angle59);
+setStyle59('top',topPosition59);
+setStyle59('left',leftPosition59);
+
+document.getElementById('txttest').innerHTML=h+":"+m+":"+s+":"+ms+":"+tmove;
+}
+t=setTimeout('startTime()',1);
+}
+
+function setStyle(name,value)
+{
+    var oDiv=document.getElementById('txt00');
+    oDiv.style[name]=value;
+}
+
+function setStyle01(name,value)
+{
+    var oDiv=document.getElementById('txt01');
+    oDiv.style[name]=value;
+}
+
+function setStyle02(name,value)
+{
+    var oDiv=document.getElementById('txt02');
+    oDiv.style[name]=value;
+}
+
+function setStyle03(name,value)
+{
+    var oDiv=document.getElementById('txt03');
+    oDiv.style[name]=value;
+}
+
+function setStyle04(name,value)
+{
+    var oDiv=document.getElementById('txt04');
+    oDiv.style[name]=value;
+}
+
+function setStyle05(name,value)
+{
+    var oDiv=document.getElementById('txt05');
+    oDiv.style[name]=value;
+}
+
+function setStyle06(name,value)
+{
+    var oDiv=document.getElementById('txt06');
+    oDiv.style[name]=value;
+}
+
+function setStyle07(name,value)
+{
+    var oDiv=document.getElementById('txt07');
+    oDiv.style[name]=value;
+}
+
+function setStyle08(name,value)
+{
+    var oDiv=document.getElementById('txt08');
+    oDiv.style[name]=value;
+}
+
+function setStyle09(name,value)
+{
+    var oDiv=document.getElementById('txt09');
+    oDiv.style[name]=value;
+}
+
+function setStyle10(name,value)
+{
+    var oDiv=document.getElementById('txt10');
+    oDiv.style[name]=value;
+}
+
+function setStyle11(name,value)
+{
+    var oDiv=document.getElementById('txt11');
+    oDiv.style[name]=value;
+}
+
+
+function setStyle12(name,value)
+{
+    var oDiv=document.getElementById('txt12');
+    oDiv.style[name]=value;
+}
+
+
+function setStyle13(name,value)
+{
+    var oDiv=document.getElementById('txt13');
+    oDiv.style[name]=value;
+}
+
+function setStyle14(name,value)
+{
+    var oDiv=document.getElementById('txt14');
+    oDiv.style[name]=value;
+}
+
+function setStyle15(name,value)
+{
+    var oDiv=document.getElementById('txt15');
+    oDiv.style[name]=value;
+}
+
+function setStyle16(name,value)
+{
+    var oDiv=document.getElementById('txt16');
+    oDiv.style[name]=value;
+}
+
+function setStyle17(name,value)
+{
+    var oDiv=document.getElementById('txt17');
+    oDiv.style[name]=value;
+}
+
+function setStyle18(name,value)
+{
+    var oDiv=document.getElementById('txt18');
+    oDiv.style[name]=value;
+}
+
+function setStyle19(name,value)
+{
+    var oDiv=document.getElementById('txt19');
+    oDiv.style[name]=value;
+}
+
+function setStyle20(name,value)
+{
+    var oDiv=document.getElementById('txt20');
+    oDiv.style[name]=value;
+}
+
+function setStyle21(name,value)
+{
+    var oDiv=document.getElementById('txt21');
+    oDiv.style[name]=value;
+}
+
+function setStyle22(name,value)
+{
+    var oDiv=document.getElementById('txt22');
+    oDiv.style[name]=value;
+}
+
+
+function setStyle23(name,value)
+{
+    var oDiv=document.getElementById('txt23');
+    oDiv.style[name]=value;
+}
+
+
+function setStyle24(name,value)
+{
+    var oDiv=document.getElementById('txt24');
+    oDiv.style[name]=value;
+}
+
+function setStyle25(name,value)
+{
+    var oDiv=document.getElementById('txt25');
+    oDiv.style[name]=value;
+}
+
+function setStyle26(name,value)
+{
+    var oDiv=document.getElementById('txt26');
+    oDiv.style[name]=value;
+}
+
+
+function setStyle27(name,value)
+{
+    var oDiv=document.getElementById('txt27');
+    oDiv.style[name]=value;
+}
+
+function setStyle28(name,value)
+{
+    var oDiv=document.getElementById('txt28');
+    oDiv.style[name]=value;
+}
+
+function setStyle29(name,value)
+{
+    var oDiv=document.getElementById('txt29');
+    oDiv.style[name]=value;
+}
+
+function setStyle30(name,value)
+{
+    var oDiv=document.getElementById('txt30');
+    oDiv.style[name]=value;
+}
+
+function setStyle31(name,value)
+{
+    var oDiv=document.getElementById('txt31');
+    oDiv.style[name]=value;
+}
+
+function setStyle32(name,value)
+{
+    var oDiv=document.getElementById('txt32');
+    oDiv.style[name]=value;
+}
+
+function setStyle33(name,value)
+{
+    var oDiv=document.getElementById('txt33');
+    oDiv.style[name]=value;
+}
+
+function setStyle34(name,value)
+{
+    var oDiv=document.getElementById('txt34');
+    oDiv.style[name]=value;
+}
+
+function setStyle35(name,value)
+{
+    var oDiv=document.getElementById('txt35');
+    oDiv.style[name]=value;
+}
+
+function setStyle36(name,value)
+{
+    var oDiv=document.getElementById('txt36');
+    oDiv.style[name]=value;
+}
+
+
+function setStyle37(name,value)
+{
+    var oDiv=document.getElementById('txt37');
+    oDiv.style[name]=value;
+}
+
+function setStyle38(name,value)
+{
+    var oDiv=document.getElementById('txt38');
+    oDiv.style[name]=value;
+}
+
+function setStyle39(name,value)
+{
+    var oDiv=document.getElementById('txt39');
+    oDiv.style[name]=value;
+}
+
+function setStyle40(name,value)
+{
+    var oDiv=document.getElementById('txt40');
+    oDiv.style[name]=value;
+}
+
+function setStyle41(name,value)
+{
+    var oDiv=document.getElementById('txt41');
+    oDiv.style[name]=value;
+}
+
+function setStyle42(name,value)
+{
+    var oDiv=document.getElementById('txt42');
+    oDiv.style[name]=value;
+}
+
+function setStyle43(name,value)
+{
+    var oDiv=document.getElementById('txt43');
+    oDiv.style[name]=value;
+}
+
+function setStyle44(name,value)
+{
+    var oDiv=document.getElementById('txt44');
+    oDiv.style[name]=value;
+}
+
+function setStyle45(name,value)
+{
+    var oDiv=document.getElementById('txt45');
+    oDiv.style[name]=value;
+}
+
+function setStyle46(name,value)
+{
+    var oDiv=document.getElementById('txt46');
+    oDiv.style[name]=value;
+}
+
+function setStyle47(name,value)
+{
+    var oDiv=document.getElementById('txt47');
+    oDiv.style[name]=value;
+}
+
+function setStyle48(name,value)
+{
+    var oDiv=document.getElementById('txt48');
+    oDiv.style[name]=value;
+}
+
+function setStyle49(name,value)
+{
+    var oDiv=document.getElementById('txt49');
+    oDiv.style[name]=value;
+}
+
+function setStyle50(name,value)
+{
+    var oDiv=document.getElementById('txt50');
+    oDiv.style[name]=value;
+}
+
+function setStyle51(name,value)
+{
+    var oDiv=document.getElementById('txt51');
+    oDiv.style[name]=value;
+}
+
+function setStyle52(name,value)
+{
+    var oDiv=document.getElementById('txt52');
+    oDiv.style[name]=value;
+}
+
+function setStyle53(name,value)
+{
+    var oDiv=document.getElementById('txt53');
+    oDiv.style[name]=value;
+}
+
+function setStyle54(name,value)
+{
+    var oDiv=document.getElementById('txt54');
+    oDiv.style[name]=value;
+}
+
+function setStyle55(name,value)
+{
+    var oDiv=document.getElementById('txt55');
+    oDiv.style[name]=value;
+}
+
+function setStyle56(name,value)
+{
+    var oDiv=document.getElementById('txt56');
+    oDiv.style[name]=value;
+}
+
+function setStyle57(name,value)
+{
+    var oDiv=document.getElementById('txt57');
+    oDiv.style[name]=value;
+}
+
+function setStyle58(name,value)
+{
+    var oDiv=document.getElementById('txt58');
+    oDiv.style[name]=value;
+}
+
+function setStyle59(name,value)
+{
+    var oDiv=document.getElementById('txt59');
+    oDiv.style[name]=value;
+}
+
+
+function setStylem(name,value)
+{
+    var oDiv=document.getElementById('txtm00');
+    oDiv.style[name]=value;
+}
+
+function setStylem01(name,value)
+{
+    var oDiv=document.getElementById('txtm01');
+    oDiv.style[name]=value;
+}
+
+function setStylem02(name,value)
+{
+    var oDiv=document.getElementById('txtm02');
+    oDiv.style[name]=value;
+}
+
+function setStylem03(name,value)
+{
+    var oDiv=document.getElementById('txtm03');
+    oDiv.style[name]=value;
+}
+
+function setStylem04(name,value)
+{
+    var oDiv=document.getElementById('txtm04');
+    oDiv.style[name]=value;
+}
+
+function setStylem05(name,value)
+{
+    var oDiv=document.getElementById('txtm05');
+    oDiv.style[name]=value;
+}
+
+function setStylem06(name,value)
+{
+    var oDiv=document.getElementById('txtm06');
+    oDiv.style[name]=value;
+}
+
+function setStylem07(name,value)
+{
+    var oDiv=document.getElementById('txtm07');
+    oDiv.style[name]=value;
+}
+
+function setStylem08(name,value)
+{
+    var oDiv=document.getElementById('txtm08');
+    oDiv.style[name]=value;
+}
+
+function setStylem09(name,value)
+{
+    var oDiv=document.getElementById('txtm09');
+    oDiv.style[name]=value;
+}
+
+function setStylem10(name,value)
+{
+    var oDiv=document.getElementById('txtm10');
+    oDiv.style[name]=value;
+}
+
+function setStylem11(name,value)
+{
+    var oDiv=document.getElementById('txtm11');
+    oDiv.style[name]=value;
+}
+
+
+function setStylem12(name,value)
+{
+    var oDiv=document.getElementById('txtm12');
+    oDiv.style[name]=value;
+}
+
+
+function setStylem13(name,value)
+{
+    var oDiv=document.getElementById('txtm13');
+    oDiv.style[name]=value;
+}
+
+function setStylem14(name,value)
+{
+    var oDiv=document.getElementById('txtm14');
+    oDiv.style[name]=value;
+}
+
+function setStylem15(name,value)
+{
+    var oDiv=document.getElementById('txtm15');
+    oDiv.style[name]=value;
+}
+
+function setStylem16(name,value)
+{
+    var oDiv=document.getElementById('txtm16');
+    oDiv.style[name]=value;
+}
+
+function setStylem17(name,value)
+{
+    var oDiv=document.getElementById('txtm17');
+    oDiv.style[name]=value;
+}
+
+function setStylem18(name,value)
+{
+    var oDiv=document.getElementById('txtm18');
+    oDiv.style[name]=value;
+}
+
+function setStylem19(name,value)
+{
+    var oDiv=document.getElementById('txtm19');
+    oDiv.style[name]=value;
+}
+
+function setStylem20(name,value)
+{
+    var oDiv=document.getElementById('txtm20');
+    oDiv.style[name]=value;
+}
+
+function setStylem21(name,value)
+{
+    var oDiv=document.getElementById('txtm21');
+    oDiv.style[name]=value;
+}
+
+function setStylem22(name,value)
+{
+    var oDiv=document.getElementById('txtm22');
+    oDiv.style[name]=value;
+}
+
+
+function setStylem23(name,value)
+{
+    var oDiv=document.getElementById('txtm23');
+    oDiv.style[name]=value;
+}
+
+
+function setStylem24(name,value)
+{
+    var oDiv=document.getElementById('txtm24');
+    oDiv.style[name]=value;
+}
+
+function setStylem25(name,value)
+{
+    var oDiv=document.getElementById('txtm25');
+    oDiv.style[name]=value;
+}
+
+function setStylem26(name,value)
+{
+    var oDiv=document.getElementById('txtm26');
+    oDiv.style[name]=value;
+}
+
+
+function setStylem27(name,value)
+{
+    var oDiv=document.getElementById('txtm27');
+    oDiv.style[name]=value;
+}
+
+function setStylem28(name,value)
+{
+    var oDiv=document.getElementById('txtm28');
+    oDiv.style[name]=value;
+}
+
+function setStylem29(name,value)
+{
+    var oDiv=document.getElementById('txtm29');
+    oDiv.style[name]=value;
+}
+
+function setStylem30(name,value)
+{
+    var oDiv=document.getElementById('txtm30');
+    oDiv.style[name]=value;
+}
+
+function setStylem31(name,value)
+{
+    var oDiv=document.getElementById('txtm31');
+    oDiv.style[name]=value;
+}
+
+function setStylem32(name,value)
+{
+    var oDiv=document.getElementById('txtm32');
+    oDiv.style[name]=value;
+}
+
+function setStylem33(name,value)
+{
+    var oDiv=document.getElementById('txtm33');
+    oDiv.style[name]=value;
+}
+
+function setStylem34(name,value)
+{
+    var oDiv=document.getElementById('txtm34');
+    oDiv.style[name]=value;
+}
+
+function setStylem35(name,value)
+{
+    var oDiv=document.getElementById('txtm35');
+    oDiv.style[name]=value;
+}
+
+function setStylem36(name,value)
+{
+    var oDiv=document.getElementById('txtm36');
+    oDiv.style[name]=value;
+}
+
+
+function setStylem37(name,value)
+{
+    var oDiv=document.getElementById('txtm37');
+    oDiv.style[name]=value;
+}
+
+function setStylem38(name,value)
+{
+    var oDiv=document.getElementById('txtm38');
+    oDiv.style[name]=value;
+}
+
+function setStylem39(name,value)
+{
+    var oDiv=document.getElementById('txtm39');
+    oDiv.style[name]=value;
+}
+
+function setStylem40(name,value)
+{
+    var oDiv=document.getElementById('txtm40');
+    oDiv.style[name]=value;
+}
+
+function setStylem41(name,value)
+{
+    var oDiv=document.getElementById('txtm41');
+    oDiv.style[name]=value;
+}
+
+function setStylem42(name,value)
+{
+    var oDiv=document.getElementById('txtm42');
+    oDiv.style[name]=value;
+}
+
+function setStylem43(name,value)
+{
+    var oDiv=document.getElementById('txtm43');
+    oDiv.style[name]=value;
+}
+
+function setStylem44(name,value)
+{
+    var oDiv=document.getElementById('txtm44');
+    oDiv.style[name]=value;
+}
+
+function setStylem45(name,value)
+{
+    var oDiv=document.getElementById('txtm45');
+    oDiv.style[name]=value;
+}
+
+function setStylem46(name,value)
+{
+    var oDiv=document.getElementById('txtm46');
+    oDiv.style[name]=value;
+}
+
+function setStylem47(name,value)
+{
+    var oDiv=document.getElementById('txtm47');
+    oDiv.style[name]=value;
+}
+
+function setStylem48(name,value)
+{
+    var oDiv=document.getElementById('txtm48');
+    oDiv.style[name]=value;
+}
+
+function setStylem49(name,value)
+{
+    var oDiv=document.getElementById('txtm49');
+    oDiv.style[name]=value;
+}
+
+function setStylem50(name,value)
+{
+    var oDiv=document.getElementById('txtm50');
+    oDiv.style[name]=value;
+}
+
+function setStylem51(name,value)
+{
+    var oDiv=document.getElementById('txtm51');
+    oDiv.style[name]=value;
+}
+
+function setStylem52(name,value)
+{
+    var oDiv=document.getElementById('txtm52');
+    oDiv.style[name]=value;
+}
+
+function setStylem53(name,value)
+{
+    var oDiv=document.getElementById('txtm53');
+    oDiv.style[name]=value;
+}
+
+function setStylem54(name,value)
+{
+    var oDiv=document.getElementById('txtm54');
+    oDiv.style[name]=value;
+}
+
+function setStylem55(name,value)
+{
+    var oDiv=document.getElementById('txtm55');
+    oDiv.style[name]=value;
+}
+
+function setStylem56(name,value)
+{
+    var oDiv=document.getElementById('txtm56');
+    oDiv.style[name]=value;
+}
+
+function setStylem57(name,value)
+{
+    var oDiv=document.getElementById('txtm57');
+    oDiv.style[name]=value;
+}
+
+function setStylem58(name,value)
+{
+    var oDiv=document.getElementById('txtm58');
+    oDiv.style[name]=value;
+}
+
+function setStylem59(name,value)
+{
+    var oDiv=document.getElementById('txtm59');
+    oDiv.style[name]=value;
+}
+
+
+function setStyleh(name,value)
+{
+    var oDiv=document.getElementById('txth00');
+    oDiv.style[name]=value;
+}
+
+function setStyleh01(name,value)
+{
+    var oDiv=document.getElementById('txth01');
+    oDiv.style[name]=value;
+}
+
+function setStyleh02(name,value)
+{
+    var oDiv=document.getElementById('txth02');
+    oDiv.style[name]=value;
+}
+
+function setStyleh03(name,value)
+{
+    var oDiv=document.getElementById('txth03');
+    oDiv.style[name]=value;
+}
+
+function setStyleh04(name,value)
+{
+    var oDiv=document.getElementById('txth04');
+    oDiv.style[name]=value;
+}
+
+function setStyleh05(name,value)
+{
+    var oDiv=document.getElementById('txth05');
+    oDiv.style[name]=value;
+}
+
+function setStyleh06(name,value)
+{
+    var oDiv=document.getElementById('txth06');
+    oDiv.style[name]=value;
+}
+
+function setStyleh07(name,value)
+{
+    var oDiv=document.getElementById('txth07');
+    oDiv.style[name]=value;
+}
+
+function setStyleh08(name,value)
+{
+    var oDiv=document.getElementById('txth08');
+    oDiv.style[name]=value;
+}
+
+function setStyleh09(name,value)
+{
+    var oDiv=document.getElementById('txth09');
+    oDiv.style[name]=value;
+}
+
+function setStyleh10(name,value)
+{
+    var oDiv=document.getElementById('txth10');
+    oDiv.style[name]=value;
+}
+
+function setStyleh11(name,value)
+{
+    var oDiv=document.getElementById('txth11');
+    oDiv.style[name]=value;
+}
+
+
+function setStyleh12(name,value)
+{
+    var oDiv=document.getElementById('txth12');
+    oDiv.style[name]=value;
+}
+
+
+function setStyleh13(name,value)
+{
+    var oDiv=document.getElementById('txth13');
+    oDiv.style[name]=value;
+}
+
+function setStyleh14(name,value)
+{
+    var oDiv=document.getElementById('txth14');
+    oDiv.style[name]=value;
+}
+
+function setStyleh15(name,value)
+{
+    var oDiv=document.getElementById('txth15');
+    oDiv.style[name]=value;
+}
+
+function setStyleh16(name,value)
+{
+    var oDiv=document.getElementById('txth16');
+    oDiv.style[name]=value;
+}
+
+function setStyleh17(name,value)
+{
+    var oDiv=document.getElementById('txth17');
+    oDiv.style[name]=value;
+}
+
+function setStyleh18(name,value)
+{
+    var oDiv=document.getElementById('txth18');
+    oDiv.style[name]=value;
+}
+
+function setStyleh19(name,value)
+{
+    var oDiv=document.getElementById('txth19');
+    oDiv.style[name]=value;
+}
+
+function setStyleh20(name,value)
+{
+    var oDiv=document.getElementById('txth20');
+    oDiv.style[name]=value;
+}
+
+function setStyleh21(name,value)
+{
+    var oDiv=document.getElementById('txth21');
+    oDiv.style[name]=value;
+}
+
+function setStyleh22(name,value)
+{
+    var oDiv=document.getElementById('txth22');
+    oDiv.style[name]=value;
+}
+
+
+function setStyleh23(name,value)
+{
+    var oDiv=document.getElementById('txth23');
+    oDiv.style[name]=value;
+}
+function checkTime(i)
+{
+if (i<10) 
+  {i="0" + i}
+  return i
+}
+
+</script>
+
+</head>
+<body onload="startTime()">
+<div id="txtbgs" style="width: 20px;height: 18px;position:absolute;top:400px;left:660px;background-color:gray;"></div>
+<div id="txtbgm" style="width: 20px;height: 18px;position:absolute;top:400px;left:630px;background-color:gray;"></div>
+<div id="txtbgh" style="width: 20px;height: 18px;position:absolute;top:400px;left:600px;background-color:gray;"></div>
+
+<div id="txtby" style="width: 60px;height: 18px;position:absolute;top:400px;left:400px;background-color:white;">By June</div>
+
+<div id="txttest" style="width: 60px;height: 18px;position:absolute;top:420px;left:360px;background-color:white;">Time</div>
+
+<div id="txt00" class="demo">00</div>
+<div id="txt01" class="demo">01</div>
+<div id="txt02" class="demo">02</div>
+<div id="txt03" class="demo">03</div>
+<div id="txt04" class="demo">04</div>
+<div id="txt05" class="demo">05</div>
+<div id="txt06" class="demo">06</div>
+<div id="txt07" class="demo">07</div>
+<div id="txt08" class="demo">08</div>
+<div id="txt09" class="demo">09</div>
+<div id="txt10" class="demo">10</div>
+<div id="txt11" class="demo">11</div>
+<div id="txt12" class="demo">12</div>
+<div id="txt13" class="demo">13</div>
+<div id="txt14" class="demo">14</div>
+<div id="txt15" class="demo">15</div>
+<div id="txt16" class="demo">16</div>
+<div id="txt17" class="demo">17</div>
+<div id="txt18" class="demo">18</div>
+<div id="txt19" class="demo">19</div>
+<div id="txt20" class="demo">20</div>
+<div id="txt21" class="demo">21</div>
+<div id="txt22" class="demo">22</div>
+<div id="txt23" class="demo">23</div>
+<div id="txt24" class="demo">24</div>
+<div id="txt25" class="demo">25</div>
+<div id="txt26" class="demo">26</div>
+<div id="txt27" class="demo">27</div>
+<div id="txt28" class="demo">28</div>
+<div id="txt29" class="demo">29</div>
+<div id="txt30" class="demo">30</div>
+<div id="txt31" class="demo">31</div>
+<div id="txt32" class="demo">32</div>
+<div id="txt33" class="demo">33</div>
+<div id="txt34" class="demo">34</div>
+<div id="txt35" class="demo">35</div>
+<div id="txt36" class="demo">36</div>
+<div id="txt37" class="demo">37</div>
+<div id="txt38" class="demo">38</div>
+<div id="txt39" class="demo">39</div>
+<div id="txt40" class="demo">40</div>
+<div id="txt41" class="demo">41</div>
+<div id="txt42" class="demo">42</div>
+<div id="txt43" class="demo">43</div>
+<div id="txt44" class="demo">44</div>
+<div id="txt45" class="demo">45</div>
+<div id="txt46" class="demo">46</div>
+<div id="txt47" class="demo">47</div>
+<div id="txt48" class="demo">48</div>
+<div id="txt49" class="demo">49</div>
+<div id="txt50" class="demo">50</div>
+<div id="txt51" class="demo">51</div>
+<div id="txt52" class="demo">52</div>
+<div id="txt53" class="demo">53</div>
+<div id="txt54" class="demo">54</div>
+<div id="txt55" class="demo">55</div>
+<div id="txt56" class="demo">56</div>
+<div id="txt57" class="demo">57</div>
+<div id="txt58" class="demo">58</div>
+<div id="txt59" class="demo">59</div>
+
+<div id="txtm00" class="demo">00</div>
+<div id="txtm01" class="demo">01</div>
+<div id="txtm02" class="demo">02</div>
+<div id="txtm03" class="demo">03</div>
+<div id="txtm04" class="demo">04</div>
+<div id="txtm05" class="demo">05</div>
+<div id="txtm06" class="demo">06</div>
+<div id="txtm07" class="demo">07</div>
+<div id="txtm08" class="demo">08</div>
+<div id="txtm09" class="demo">09</div>
+<div id="txtm10" class="demo">10</div>
+<div id="txtm11" class="demo">11</div>
+<div id="txtm12" class="demo">12</div>
+<div id="txtm13" class="demo">13</div>
+<div id="txtm14" class="demo">14</div>
+<div id="txtm15" class="demo">15</div>
+<div id="txtm16" class="demo">16</div>
+<div id="txtm17" class="demo">17</div>
+<div id="txtm18" class="demo">18</div>
+<div id="txtm19" class="demo">19</div>
+<div id="txtm20" class="demo">20</div>
+<div id="txtm21" class="demo">21</div>
+<div id="txtm22" class="demo">22</div>
+<div id="txtm23" class="demo">23</div>
+<div id="txtm24" class="demo">24</div>
+<div id="txtm25" class="demo">25</div>
+<div id="txtm26" class="demo">26</div>
+<div id="txtm27" class="demo">27</div>
+<div id="txtm28" class="demo">28</div>
+<div id="txtm29" class="demo">29</div>
+<div id="txtm30" class="demo">30</div>
+<div id="txtm31" class="demo">31</div>
+<div id="txtm32" class="demo">32</div>
+<div id="txtm33" class="demo">33</div>
+<div id="txtm34" class="demo">34</div>
+<div id="txtm35" class="demo">35</div>
+<div id="txtm36" class="demo">36</div>
+<div id="txtm37" class="demo">37</div>
+<div id="txtm38" class="demo">38</div>
+<div id="txtm39" class="demo">39</div>
+<div id="txtm40" class="demo">40</div>
+<div id="txtm41" class="demo">41</div>
+<div id="txtm42" class="demo">42</div>
+<div id="txtm43" class="demo">43</div>
+<div id="txtm44" class="demo">44</div>
+<div id="txtm45" class="demo">45</div>
+<div id="txtm46" class="demo">46</div>
+<div id="txtm47" class="demo">47</div>
+<div id="txtm48" class="demo">48</div>
+<div id="txtm49" class="demo">49</div>
+<div id="txtm50" class="demo">50</div>
+<div id="txtm51" class="demo">51</div>
+<div id="txtm52" class="demo">52</div>
+<div id="txtm53" class="demo">53</div>
+<div id="txtm54" class="demo">54</div>
+<div id="txtm55" class="demo">55</div>
+<div id="txtm56" class="demo">56</div>
+<div id="txtm57" class="demo">57</div>
+<div id="txtm58" class="demo">58</div>
+<div id="txtm59" class="demo">59</div>
+
+<div id="txth00" class="demo">00</div>
+<div id="txth01" class="demo">01</div>
+<div id="txth02" class="demo">02</div>
+<div id="txth03" class="demo">03</div>
+<div id="txth04" class="demo">04</div>
+<div id="txth05" class="demo">05</div>
+<div id="txth06" class="demo">06</div>
+<div id="txth07" class="demo">07</div>
+<div id="txth08" class="demo">08</div>
+<div id="txth09" class="demo">09</div>
+<div id="txth10" class="demo">10</div>
+<div id="txth11" class="demo">11</div>
+<div id="txth12" class="demo">12</div>
+<div id="txth13" class="demo">13</div>
+<div id="txth14" class="demo">14</div>
+<div id="txth15" class="demo">15</div>
+<div id="txth16" class="demo">16</div>
+<div id="txth17" class="demo">17</div>
+<div id="txth18" class="demo">18</div>
+<div id="txth19" class="demo">19</div>
+<div id="txth20" class="demo">20</div>
+<div id="txth21" class="demo">21</div>
+<div id="txth22" class="demo">22</div>
+<div id="txth23" class="demo">23</div>
+</body>
+</html>

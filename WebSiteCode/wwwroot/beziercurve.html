@@ -1,0 +1,42 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=0.4, user-scalable=no"/>
+</head>
+
+<canvas id="myCanvas" width="750" height="400" style="border:1px solid #c3c3c3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script type="text/javascript">
+function draw()
+{
+	var c=document.getElementById("myCanvas");
+	var cxt=c.getContext("2d");
+	cxt.clearRect ( 0 , 0 , 750 , 400 );
+	cxt.beginPath();
+	cxt.moveTo(Math.floor(Math.random()*750),Math.floor(Math.random()*400));
+	cxt.bezierCurveTo(Math.floor(Math.random()*750),Math.floor(Math.random()*400),Math.floor(Math.random()*750),Math.floor(Math.random()*400),Math.floor(Math.random()*750),Math.floor(Math.random()*400));
+	cxt.bezierCurveTo(Math.floor(Math.random()*750),Math.floor(Math.random()*400),Math.floor(Math.random()*750),Math.floor(Math.random()*400),Math.floor(Math.random()*750),Math.floor(Math.random()*400));
+	cxt.bezierCurveTo(Math.floor(Math.random()*750),Math.floor(Math.random()*400),Math.floor(Math.random()*750),Math.floor(Math.random()*400),Math.floor(Math.random()*750),Math.floor(Math.random()*400));
+	cxt.closePath();
+	cxt.fill();
+	cxt.stroke();
+}
+function startTime()
+{
+	draw();
+	t=setTimeout('startTime()',1000)
+}
+
+</script>
+<body>
+<p>
+  <input name="btn" type="button" class="btn" onClick="draw()" value="绘图">
+</p>
+<p>
+  <input name="btn" type="button" class="btn" onClick="startTime()" value="自动绘图启动">
+</p>
+</body>
+</html>
