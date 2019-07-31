@@ -11,4 +11,4 @@
 
 样例空间地址：http://haoshuvip36.cn/
 
-![Alt text](https://github.com/June361/HTML_JavaScript_WebSite/blob/master/ScreenShots/Home.PNG)
+![Alt text](https://github.com/June361/HTML_JavaScript_WebSite/blob/master/ScreenShots/WebSite.PNG)
