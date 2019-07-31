@@ -1,0 +1,232 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="keywords" content="脚本小子_小贝_HTML5_canvas线条"/>
+<meta name="description" content="脚本小子_小贝_HTML5_canvas线条"/>
+<meta name="" content="脚本小子小贝 xiaobei qq:2801616735"/>
+<title>HTML5_canvas线条</title>
+<style>
+.divbox{
+    border:1px solid black;
+    float:left;
+    width:95%;
+    padding:5px;
+}
+.divcanvas
+{
+    float:left;
+}
+canvas{
+    border:1px solid red;
+}
+.divinfo
+{
+    float:left;
+    padding:10px;
+    width:500px;
+    height:auto;
+    border:1px solid black;
+}
+.divclear
+{
+    clear:both;
+}
+</style>
+</head>
+
+<body>
+    <h2>HTML5_canvas线条</h2>
+    <ul>
+        <li>1、简单线条</li>
+        <li>2、三角形</li>
+        <li>3、填充三角形背景颜色</li>
+        <li>4、线条颜色以及线条大小</li>
+        <li>5、二次贝塞尔曲线</li>
+        <li>6、三次贝塞尔曲线</li>
+    </ul>
+    <hr/>
+    <h3>1、简单线条</h3>
+    <div class="divbox">
+        <div class="divcanvas">
+            <canvas id="canvas1" width="400" height="150"></canvas>
+        </div>
+        <div class="divcanvas">
+            <button onclick="func(1);">创建线条</button>
+        </div>
+        <div class="divinfo" id="info1" style="display:none;">
+            ctx.beginPath(); //开始新路径<br/>
+            ctx.moveTo(10,10); //线条定位起点<br/>
+            ctx.lineTo(20,50); //线条定位终点<br/>
+            ctx.stroke();      //画线条<br/>
+        </div>
+    </div>
+    <div class="divclear"></div>
+    <hr/>
+    <h3>2、三角形</h3>
+    <div class="divbox">
+        <div class="divcanvas">
+            <canvas id="canvas2" width="400" height="150"></canvas>
+        </div>
+        <div class="divcanvas">
+            <button onclick="func(2);">创建三角形</button>
+        </div>
+        <div class="divinfo" id="info2" style="display:none;">
+            ctx.beginPath(); //开始新路径<br/>
+            ctx.lineWidth = 10;  //线条宽度大小<br/>
+            ctx.lineJoin = "round"; //线条相交时夹角形状 bevel==>创建斜角 round==>创建圆角 miter==>创建尖角(默认)<br/>
+            ctx.moveTo(50,50); //线条定位起点<br/>
+            ctx.lineTo(50,100); //线条定位终点<br/>
+            ctx.lineTo(100,100); //线条定位终点<br/>
+            ctx.closePath(); //创建从当前点到开始点的路径<br/>
+            ctx.stroke(); //画线条
+        </div>
+    </div>
+    <div class="divclear"></div>
+    <hr/>
+    <h3>3、填充三角形背景颜色</h3>
+    <div class="divbox">
+        <div class="divcanvas">
+            <canvas id="canvas3" width="400" height="150"></canvas>
+        </div>
+        <div class="divcanvas">
+            <button onclick="changeColor(3,'red');">填充红色</button>
+            <button onclick="changeColor(3,'blue');">填充蓝色</button>
+        </div>
+        <div class="divinfo" id="info3" style="display:none;">
+            ctx.beginPath(); //开始新路径<br/>
+            ctx.lineWidth = 10;  //线条宽度大小<br/>
+            ctx.lineJoin = "round"; //线条相交时夹角形状 bevel==>创建斜角 round==>创建圆角 miter==>创建尖角(默认)<br/>
+            ctx.moveTo(50,50); //线条定位起点<br/>
+            ctx.lineTo(50,100); //线条定位终点<br/>
+            ctx.lineTo(100,100); //线条定位终点<br/>
+            ctx.closePath(); //创建从当前点到开始点的路径<br/>
+            ctx.stroke(); //画线条 <br/>
+            ctx.fillStyle = "color" //填充的颜色设置<br/>
+            ctx.fill();  //进行填充操作
+        </div>
+    </div>
+    <div class="divclear"></div>
+    <hr/>
+    <h3>4、线条颜色以及线条大小</h3>
+    <div class="divbox">
+        <div class="divcanvas">
+            <canvas id="canvas4" width="400" height="150"></canvas>
+        </div>
+        <div class="divcanvas">
+            <button onclick="changeColor(4,'red');">创建红色</button>
+            <button onclick="changeColor(4,'blue');">创建蓝色</button>
+        </div>
+        <div class="divinfo" id="info4" style="display:none;">
+            ctx.beginPath(); //开始新路径<br/>
+            ctx.lineWidth = 10;  //线条宽度大小<br/>
+            ctx.strokeStyle = lineColor; //线条颜色<br/>
+            ctx.moveTo(50,50); //线条定位起点<br/>
+            ctx.lineTo(50,100); //线条定位终点<br/>
+            ctx.stroke(); //画线条
+        </div>
+    </div>
+    <div class="divclear"></div>
+    <hr/>
+    <h3>5、二次贝塞尔曲线</h3>
+    <div class="divbox">
+        <div class="divcanvas">
+            <canvas id="canvas5" width="400" height="150"></canvas>
+        </div>
+        <div class="divcanvas">
+            <button onclick="func(5);">二次贝塞尔曲线</button>
+        </div>
+        <div class="divinfo" id="info5" style="display:none;">
+            ctx.beginPath(); //开始新路径<br/>
+            ctx.moveTo(30,30); //线条定位起点<br/>
+            ctx.quadraticCurveTo(40,100,200,40); //(x1,y1,x2,y2) (x1,y1)为控制点 (x2,y2)为结束点<br/>
+            ctx.stroke(); //画线条
+        </div>
+    </div>
+    <div class="divclear"></div>
+    <hr/>
+    <h3>6、三次贝塞尔曲线</h3>
+    <div class="divbox">
+        <div class="divcanvas">
+            <canvas id="canvas6" width="400" height="150"></canvas>
+        </div>
+        <div class="divcanvas">
+            <button onclick="func(6);">三次贝塞尔曲线</button>
+        </div>
+        <div class="divinfo" id="info6" style="display:none;">
+            ctx.beginPath(); //开始新路径<br/>
+            ctx.moveTo(30,30); //线条定位起点<br/>
+            ctx.bezierCurveTo(30,100,140,100,140,40); //(x1,y1,x2,y2,x3,y3) (x1,y1)为控制点1 (x2,y2)为控制点2 (x3,y3)为结束点<br/>
+            ctx.stroke(); //画线条
+        </div>
+    </div>
+</body>
+<script>
+    var lineColor = 'black';
+    var lineWidth = '10';
+    function changeColor(id,color)
+    {
+        lineColor = color;
+        func(id);
+    }
+    
+    function func(id)
+    {
+        var c = document.getElementById("canvas"+id);
+        var ctx = c.getContext("2d");
+        switch(id)
+        {
+            case 1:
+                ctx.beginPath();
+                ctx.moveTo(10,10);
+                ctx.lineTo(20,50);
+                ctx.stroke();
+            break;
+            case 2:
+                ctx.beginPath();
+                ctx.lineWidth = 10;
+                ctx.lineJoin = "round"; //bevel==>创建斜角 round==>创建圆角 miter==>创建尖角(默认)
+                ctx.moveTo(50,50);
+                ctx.lineTo(50,100);
+                ctx.lineTo(100,100);
+                ctx.closePath();
+                ctx.stroke();
+            break;
+            case 3:
+                ctx.beginPath();
+                ctx.lineWidth = 10;
+                ctx.lineJoin = "round"; //bevel==>创建斜角 round==>创建圆角 miter==>创建尖角(默认)
+                ctx.moveTo(50,50);
+                ctx.lineTo(50,100);
+                ctx.lineTo(100,100);
+                ctx.closePath();
+                ctx.stroke();
+                ctx.fillStyle = lineColor;
+                ctx.fill();
+            break;
+            case 4:
+                ctx.beginPath();
+                ctx.lineWidth = lineWidth;
+                ctx.strokeStyle = lineColor;
+                ctx.moveTo(100,50);
+                ctx.lineTo(50,100);
+                ctx.stroke();
+            break;
+            case 5:
+                ctx.beginPath();
+                ctx.moveTo(30,30);
+                ctx.quadraticCurveTo(40,100,200,40);
+                ctx.stroke();
+            break;
+            case 6:
+                ctx.beginPath();
+                ctx.moveTo(30,30);
+                ctx.bezierCurveTo(30,100,140,100,140,40);
+                ctx.stroke();
+            break;
+        }
+        document.getElementById("info"+id).style.display = "";
+    }
+</script>
+    
+</html>

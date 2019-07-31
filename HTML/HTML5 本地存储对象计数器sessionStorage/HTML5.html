@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script>
+function clickCounter() {
+    if(typeof(Storage) !== "undefined") {
+        if (sessionStorage.clickcount) {
+            sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+        } else {
+            sessionStorage.clickcount = 1;
+        }
+        document.getElementById("result").innerHTML = "在本 session 中，您已经点击这个按钮 " + sessionStorage.clickcount + " 次。";
+    } else {
+        document.getElementById("result").innerHTML = "抱歉！您的浏览器不支持 Web Storage ...";
+    }
+}
+</script>
+</head>
+<body>
+<p><button onclick="clickCounter()" type="button">请点击这里</button></p>
+<div id="result"></div>
+<p>请点击按钮使计数器递增。</p>
+<p>请关闭浏览器或标签页，然后再试一次，计数器会重置。</p>
+</body>
+</html>
