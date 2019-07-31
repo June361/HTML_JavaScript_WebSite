@@ -8,3 +8,7 @@
 基于Web的FTP客户端：http://www.net2ftp.com/  
 
 ![Alt text](https://github.com/June361/HTML_JavaScript_WebSite/blob/master/ScreenShots/Home.PNG)
+
+样例空间地址：http://haoshuvip36.cn/
+
+![Alt text](https://github.com/June361/HTML_JavaScript_WebSite/blob/master/ScreenShots/Home.PNG)
