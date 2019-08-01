@@ -5,7 +5,7 @@
 
 ![Alt text](https://github.com/June361/HTML_JavaScript_WebSite/blob/master/ScreenShots/Free3vDo.PNG)
 
-免费空间地址（支持：HTML，JavaScript，PHP/ASP，MySQL/MsSQL）[推荐]：http://idc.3v.do 
+收费空间地址（支持：HTML，JavaScript，PHP/ASP，MySQL/MsSQL）：http://idc.3v.do 
 
 ![Alt text](https://github.com/June361/HTML_JavaScript_WebSite/blob/master/ScreenShots/Idc3vDo.png)
 
