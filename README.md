@@ -7,7 +7,7 @@
 
 免费空间地址（支持：HTML，JavaScript，PHP/ASP，MySQL/MsSQL）[推荐]：http://idc.3v.do 
 
-![Alt text](https://github.com/June361/HTML_JavaScript_WebSite/blob/master/ScreenShots/Idc3vDo.PNG)
+![Alt text](https://github.com/June361/HTML_JavaScript_WebSite/blob/master/ScreenShots/Idc3vDo.png)
 
 基于Web的FTP客户端：http://www.net2ftp.com/  
 
